@@ -16,10 +16,19 @@ h3{
 #wrapper{
     width: 97%;
     margin: auto;
+    margin-bottom: 4%;
 }
 
 #dukeNukem{
     display: flex;
-    border: 1px solid black;
     margin: 20px;
+}
+
+#dukeNukem p{
+    margin: 5px;
+    width: 60%;
+}
+
+figcaption{
+    opacity: 0.5;
 }
