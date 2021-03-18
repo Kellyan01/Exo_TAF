@@ -4,24 +4,73 @@
 
 * {
     border: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Monserrat, Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
+
+/*-------------------------------
+------------ GENERAL ------------
+--------------------------------*/
+
+@font-face {
+    font-family: "Monserrat";
+    src: url("font/Montserrat-Medium.otf");
+}
+
+
 /*-------------------------------
 ------------BANDEAU + NAV -------
 --------------------------------*/
 
-.logo {
-    float: left;
+header {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+}
+
+header .logo {
+    margin-left: 50px;
+    position: absolute;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    font-variant: all-small-caps;
+    font-size: 1rem;
+    padding: 15px 0;
+    margin-right: 50px;
+}
+
+nav ul img {
+    height: 0.7rem;
+}
+
+nav ul li {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav a {
+    color: #000;
+}
+
+nav a:hover {
+    color:#c10230;
+}
+
+nav h6 {
+    font-size: 1.1rem;
 }
 
 header ul {
@@ -34,27 +83,109 @@ header ul {
     display: none;
 }
 
+.recherche, .contact {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+}
+
+.contact {
+    background-color: #ffcd00;
+    margin-left: 20px;
+}
+
+.recherche:hover {
+    background-color: #ccc;
+    color: #c10230;
+    cursor: pointer;
+}
+
+.contact:hover {
+    color: #c10230;
+    cursor: pointer;
+}
+
+.bandeau {
+    max-width: 1350px;
+    width: 100%;
+}
 
 /*-------------------------------
 ------------WRAPPER--------------
 --------------------------------*/
+.wrapper {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: -100px auto 0 auto;
+    max-width: 1060px;
+    width: 100%;
+    z-index: 10;
+    position: relative;
 
+    height: 1000px;
+}
 
 /*-------------------------------
 ------------FOOTER---------------
 --------------------------------*/
 
-footer .colonne {
+footer {
+    background-color: #202228;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+footer .colonne {   
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1350px;
+    width: 100vw;
+    height: 300px;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+footer h5 {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+.col1 img {
+    margin-top: 150px;
+    width: 150px;
+}
+
+.col3 a {
+    color: #ffcd00;
+}
+
+footer .mention {
+    background-color: #283035;
+    display: flex;
+    justify-content: flex-end;
 }
 
 footer .mention a {
-    display: flex;
-    flex-direction: column;
-    width: 50px;
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    margin: 0 50px 30px 0;
 }
 
 footer .mention img {
+    margin-bottom: 5px;
+    margin-top: 30px;
     transform: rotate(180deg);
+    width: 50px;
 }
