@@ -23,7 +23,217 @@
                 <p>HTML permet d'inclure des images et d'autres contenus dans les pages web. Grâce à HTML, chacun peut créer des sites web aussi bien statiques que dynamiques. HTML est le langage qui permet de décrire la structure et le contenu d'un document web. Ce contenu est balisé par des éléments HTML comme < head >, < title >, < body >, < header >, < footer >,< p >, < div >, < span >, < img > et bien d'autres encore. Ces éléments forment les blocs utilisés pour construire un site web.</p>
                 <p>En HTML, les balises sont insensibles à la casse et peuvent aussi bien être écrites en minuscules, en majuscules voire avec un mélange des deux. Autrement dit, la balise < title > pourrait très bien être écrite comme < Title >, < TiTle > ou d'une autre façon.</p>
 
+                <h2>Comment utilise t-on HTML5 ?</h2>
+                <p>Lorsque l’on s’apprête à coder une page web, trois types de logiciels s’offrent à nous : un éditeur WYSIWYG, un éditeur de texte brut ou un IDE.</p>
+
+                <h3>L'éditeur WYSIWYG :</h3>
+                <p>L’éditeur WYSIWYG pour « What You See Is What You Get » est un logiciel spécifiquement conçu pour éviter à l’utilisateur de connaître le langage. Le principe est d’avoir une interface graphique permettant de créer des pages un peu à la manière d’un logiciel de traitement de texte. L’utilisateur peut concevoir visuellement une page web, le code HTML correspondant est généré automatiquement. Le logiciel de ce type le plus connu est Dreamweaver développé par Adobe, mais il existe d’autres solutions comme SeaMonkey, Amaya ou encore Kompozer. Ce type de logiciel est déconseillé pour deux raisons :</p>
+                <p>Le code généré n’est pas toujours très qualitatif ;</p>
+                <p>L’impression de coder sans connaître le langage est un leurre, car il va falloir très rapidement accéder au code pour y apporter des corrections.</p>
+
+                <h3>Un éditeur de texte « brut » :</h3>
+                <p>Un éditeur de texte « brut » est probablement la meilleure solution pour débuter à apprendre le langage HTML. Il ne s’agit pas d’un logiciel de traitement de texte comme Word ou LibreOffice, mais plutôt d’un logiciel à l’image du bloc-notes de Windows. C’est-à-dire un logiciel permettant de saisir du texte sans mise en forme.<p>
+                <p>Vous aurez l’embarras du choix pour ce type de logiciel quel que soit votre système d’exploitation, nous pouvons citer par exemple  Notepad++ (Windows),  BBedit (Mac) ou  Brackets (Windows et Mac). Si vous pouvez tout à fait utiliser le Bloc-notes de Windows, un logiciel un peu plus adapté vous permettra de bénéficier de fonctionnalités vous facilitant le codage, comme la coloration automatique du code ou l’autocomplétion (le logiciel vous propose de compléter le texte lorsque vous saisissez du code).</p>
+
+                <h3>Un IDE :</h3>
+                <p>Un IDE pour « Integrated Development Environment » est un ensemble de logiciels permettant de répondre aux besoins spécifiques des programmeurs. Autour de l’éditeur de texte destiné à la programmation, de nombreuses fonctionnalités complémentaires vont se greffer, comme la gestion de l’historique des modifications des fichiers ou encore un client FTP permettant de placer les fichiers directement sur un serveur.</p>
+                <p>Si la construction d’une page Web reste la même avec ce type de logiciel, l’environnement peut toutefois rebuter les codeurs débutants d’autant que ces logiciels ne sont pas développés spécifiquement pour coder du HTML, mais vont souvent prendre en compte des langages plus complexes comme par exemple le PHP. C’est la raison pour laquelle un éditeur de texte simple est préconisé. Si vous souhaitez néanmoins essayer ce type de logiciel, vous pourrez en trouver un grand nombre gratuitement</p>
+ 
+                <div class="vscode">
+                    <img src="ExempleVSC.PNG" class="ExempleVSC" width="300">
+                    <figcaption>Ici un exemple de code HTML en utilisant Visual Studio Code</figcaption>
+                </div>    
+        </div>
+        
+        <div class="presentationBalises">
+            <h2>Les balises les plus communes :</h2>
+
+                <h3>Les balises de titre et de paragraphes :</h3>
+
+                <p>Comme évoqué précedemment, le HTML utilise un fonctionnement à base de balises. Ces balises permettent "la mise en page" de nos differents blocs de texte.</p>
+                <p>Il existe des balises de titre H1, H2, H3 (du plus au moins important), de création de paragraphes et bien plus encore.</p>
+                <p>Ici, je vous montre un exemple d'utilisation de balises dans un IDE comme Visual Studio Code.</p>
+                    
+                <div class="Exemple1">
+                    <img src="exemple-balises-HTML.PNG" class="démo-balises" width="300">
+                </div>
+                
+                <p>Et voici le résultat en utilisant un navigateur :</p>
+
+                <div class="Exemple2">
+                    <img src="https://juliencrego.com/wp-content/uploads/html-cours_intro-02.png" class="ExempleBaliseTitre" width="600">
+                    <figcaption>Présentation des balises < H1 >,< H2 >,< H3 > ... et < p ></figcaption>
+                </div>
+
+                <h3>Les balises d'emphase :</h3>
+
+                <p><strong>« Emphasis »</strong> en latin, comme en anglais, signifie accent ou insistance. La traduction littérale française emphase pose un petit problème car il y a une notion d’exagération. Dans le cadre de ce cours, nous utiliserons malgré tout ce terme sans tenir compte de cet aspect péjoratif.</p>
+                <p>Il existe donc deux balises permettant de mettre l’emphase sur une chaîne de caractères. Elles permettent d’identifier les mots importants pour les faire ressortir visuellement comme vous pouvez le faire avec un traitement de texte, mais elle apporte surtout, comme les titres, une valeur sémantique au contenu en question. Nous reviendrons plus en détail sur la sémantique dans le chapitre suivant.</p>
+                <p>Les deux balises sont < strong > < /strong > et < em > < /em>  qui permettent respectivement d’appliquer une emphase forte et modérée. Par défaut, les navigateurs vont distinguer visuellement ces balises lors de l’affichage en appliquant au contenu du gras pour la première balise (strong) et de l’italique pour la deuxième (em). Mais attention, ces balises ne sont pas des balises de gras ou d’italique mais bien des balises d’emphase. Il existe effectivement des balises sans valeur sémantique pour mettre du gras < b > < /b > et de l’italique < i > < /i >, mais elles ne doivent plus être utilisées aujourd’hui si vous tenez à respecter les bonnes pratiques qui préconisent l’utilisation d’un autre langage : le langage CSS pour la mise en forme d’une page Web.</p>
+
+                <div class="EmphaseHTML">
+                    <img src="EmphaseHTML.PNG" class="EmphaseHTML" width="300">
+                    <figcaption>Balises d'emphase sur VSCode</figcaption>
+                </div>
+
+                <p>Ce qui nous donnera :</p>
+
+                <div class="EmphaseNav">
+                    <img src="EmphaseNavigateur.PNG" class="EmphaseNav" width="300">
+                </div>
+
+                <h3>La valeur sémantique des balises :</h3>
+
+                <p>Nous avons évoqué précédemment le fait que certaines balises ont <strong>valeur sémantique.</strong> Il est temps d’expliquer un peu plus en détail le principe.</p>
+                <p>Lorsque vous consultez une page Web, dans une langue étrangère que vous ne connaissez pas, même si vous ne comprenez pas du tout le contenu de la page, vous êtes capable de distinguer <strong>statut des différents textes.</strong></p>
+                <p>Dans la page Web ci-contre tiré du site d’un journal suédois, vous êtes capable d’identifier visuellement le titre de l’article, son chapeau, des mots clés mis en valeur dans le texte, la légende de l’image, etc.</p>
+                <p>Vous êtes d’ailleurs capable de distinguer bien d’autres choses comme des dates, des numéros de téléphone, des adresses postales, etc.</p>
+                <p>Si un humain peut faire cette distinction, ce n’est pas forcément le cas des robots utilisés par les moteurs de recherche. La sémantique HTML est donc là pour pallier à ce problème.</p>
+                <p>Un moteur de recherche n’a pas besoin de savoir si un texte est en gras, en couleurs ou avec un corps de texte plus ou moins important, il ne se base pas sur la mise en forme. Pour permettre aux moteurs de recherche de mieux identifier les éléments importants de contenu afin d’avoir une indexation plus performante des pages, il leur faut un balisage sémantique.</p>
+                <p>Si par exemple vous utilisez la balise < h1 > < /h1 >, le moteur de recherche saura qu’il s’agit d’un titre. De la même manière si vous utilisez la balise < strong > < /strong >, il saura que cela concerne des mots-clé importants. A contrario, si vous effectuez la mise en forme d’un paragraphe <p></p> avec du gras, de la couleur et une taille de caractère plus importante pour l’afficher comme un titre, cela fonctionnera pour les internautes qui visiteront le site, mais cela ne pourra pas être interprété comme tel par un moteur de recherche, ni par un lecteur d’écran utilisé par des personnes avec des déficiences visuelles. La sémantique HTML est donc essentielle pour un web plus « intelligent ».</p>
+
+                <div class="JournalSuedois">
+                    <img src="https://juliencrego.com/wp-content/uploads/html-cours_intro-04-186x300.jpeg">
+                </div>
+
+                <h3>Balise bloc versus balise en-ligne :</h3>
+
+                <p>Deux grandes catégories de balises existent avec des caractéristiques propres à chacune : les balises de type <strong>bloc</strong> (« block » en anglais) ou <strong>en-ligne</strong> (« in-line » en anglais).</p>
+                <p><strong>Les balises de type bloc</strong> occuperont toujours par défaut la totalité de la largeur de la page (ou plus précisément de leurs conteneurs). C’est le cas de la balise < p > < /p > ou de l’ensemble des balises de titre comme < h1 > < /h1 >. Dans la mesure où ces balises occupent la totalité de la page, cela implique que ce qui suit sera automatiquement renvoyé en dessous lors de l’affichage.</p>
+                <p><strong>Les balises en ligne</strong> ont pour dimension par défaut celle de leur contenu. C’est le cas des balises < strong > < /strong > et < em > < /em >. Elles n’impliquent donc pas de retour à la ligne.</p>
+                <p>Il existe deux balises sans valeur sémantique qui sont très utilisées en HTML < div > < /div > et < span > < /span >. < div > < /div > est une balise de type bloc utilisée principalement pour structurer le contenu de la page en délimitant les différentes zones. < span> < /span > est l’équivalent de type en-ligne permettant principalement d’appliquer à des chaines de caractères une mise en forme via un langage additionnel, le langage CSS.</p>
+
+                <h3>Les attributs de balise :</h3>
+
+                <p>Il est possible d’ajouter des options, appelées <strong>attributs</strong>, aux balises HTML. Pour cela, il suffit de suivre la syntaxe suivante :</p>
+
+                <div class="baliseAttribut">
+                    <img src="balisesAttribut.PNG"width="300">
+                </div>
+
+                <p>Les attributs sont placés dans la balise ouvrante, suivis du signe = et de la valeur entre guillemets. Il est possible de mettre autant d’attributs que vous le souhaitez en les mettant les uns à la suite des autres.</p>
+                <p>Voici un exemple pour la balise < p > < /p > où l’attribut align permet de définir l’alignement horizontal. Cet exemple est utilisé uniquement pour sa facilité de compréhension, en effet il s’agit d’une mauvaise pratique. L’alignement d’un paragraphe est une caractéristique de mise en forme et la totalité de la mise en forme doit être gérée via un langage que nous avons déjà évoqué plusieurs fois, le langage CSS.</p>
+
+                <div class="PasBien">
+                    <img src="MauvaisePratique.PNG" width="300">
+                    <figcaption>Pas bien !</figcaption>
+                </div>
+
+                <p>Voici quelques exemples d’attributs qui ressemblent plus à ce que vous pouvez trouver sur Internet pour les sites respectant les bonnes pratiques.</p>
+
+                <div class="Bien">
+                    <img src="Bien.PNG" width="300">
+                    <figcaption>C'est mieux !</figcaption>
+                </div>
+
+                <p>Il faut avouer que ces attributs "class" ou "id" sont moins évidents à comprendre intuitivement. L’attribut "class" est équivalent au fait d’appliquer un style sur un paragraphe dans un logiciel de traitement de texte. L’attribut "id" quant à lui permet de donner un nom unique à un élément HTML.</p>
+
+
+        <div class="StructureHTML">
+            <h2>La structure des pages HTML :</h2>
+
+                <h3>Le doctype :</h3>
+
+                <p>La <strong>déclaration du doctype</strong> est la toute première ligne d’une page HTML. Elle se trouve avant la balise ouvrante < html >. Ce n’est pas à proprement parler du HTML, il s’agit uniquement d’une instruction pour votre navigateur afin de lui indiquer quelle version du langage HTML vous utilisez.</p>
+                <p>La version 5 de HTML a considérablement simplifié la déclaration du doctype sous la forme :</p>
+
+                <div class="Doctype">
+                    <img src="DoctypeHTML.PNG" width="300">
+                    <figcaption>Doctype HTML5</figcaption>
+                </div>
+
+                <h4>L’élément < head > </h4>
+
+                <p>Comme son nom l’indique la balise < head > < /head > correspond à l’en-tête d’une page HTML. Il va principalement contenir des métadonnées sur la page ou des liens vers d’autres fichiers comme des fichiers CSS ou JavaScript. La plupart des informations inscrites dans l’en-tête ne sont pas visibles directement par l’internaute.</p>
+
+                <h5>La balise < title > < /title ></h5>
+
+                <p>La balise < title > < /title > est un élément incontournable qui se place dans l’en-tête. Elle permet de définir le titre de la page. Ce titre ne va pas s’afficher dans le corps de votre page, il sera visible dans l’onglet de votre navigateur, dans vos favoris lorsque vous enregistrez une page et sera également utilisé pour le référencement de votre page web.</p>
+
+                <div class="HeadTitle">
+                    <img src="HeadTitle.PNG" width="300">
+                </div>
+
+                <p>Ce qui nous affichera donc en titre d'onglet :</p>
+
+                <div class="HeadTitleResultat">
+                    <img src="HeadTitleResultat.PNG">
+                    
+                </div>
+
+                <h5>La balise < meta > </h5>
+
+                <div class="BaliseMeta">
+                    <img src="BaliseMeta.PNG" width="300">
+                </div>
+                
+                <h6>Le charset</h6>
+
+                <p>Cette commande permet d’indiquer au navigateur l’encodage des caractères utilisé lors de la création d’une page web. L’encodage indiqué doit correspondre à celui utilisé par le logiciel pour créer la page web. La plupart des logiciels actuels utilisent par défaut l’encodage . Si vous ne précisez par le bon encodage, vous pouvez avoir des résultats assez surprenants lorsque vous insérez des caractères accentués comme dans l’exemple ci-dessous :</p>
+                
+                <div class="Charset">
+                    <img src="Charset.PNG" width="300">
+                </div>
+                
+                <h6>La description</h6>
+                
+                <p>Cette balise permet de décrire le contenu d’une page web. Si cette balise est définie, elle sera utilisée pour le texte affiché en dessous des liens dans les résultats des moteurs de recherche. En son absence, le texte en dessous du lien sera construit en fonction des mots clés de la recherche identifiés dans le contenu de la page.</p>
+                <p>Lorsque l’on recherche « Adrar pôle numérique » sur un moteur de recherche comme Google, on peut constater qu’il y a une description. Le texte en dessous du lien est défini en fonction des mots clés trouvés dans la page.</p>
+
+                <div class="ExempleMeta">
+                    <img src="AdrarMeta.PNG" width="300">
+                </div>
+
+                <h5>La balise < style > < /style > </h5>
+
+                <p>La balise < style > < /style > permet d’intégrer du code CSS afin de définir la mise en forme d’une page web. Le principe des styles en CSS est très proche des styles sur un logiciel de traitement de texte.</p>
+                
+                <div class="style">
+                   <img src="BaliseStyle.PNG" width="200">
+                </div>
+
+                <h4>L'élément < body > </h4>
+
+                    <p>La balise < body > < /body > correspond au corps de la page HTML. Elle contient la totalité du contenu de la page comme le texte, les images, les tableaux, etc.</p>
+                    <p>Lorsque la structure de page de la page HTML a été créée, toutes les modifications HTML se trouveront donc entre < body > et < /body >.</p>
+
+
+                <h4> Les éléments < html >, < head > et < body > sont-ils obligatoires ? </h4>
+
+                <p>D’après les spécifications de la version 5 d’HTML, il est théoriquement possible d’omettre ces trois éléments structurants. Cependant, il s’agit d’une mauvaise pratique, qui n’est pas sans poser problème pour certains navigateurs.</p>
+                <p>Vous devez donc toujours veiller à avoir la structure de base lors de la création d’une page HTML.</p>
+                <p>Voici donc la structure de base minimale que vous devriez avoir pour toutes vos pages :</p>
+
+                <div class="DoctypeMini">
+                    <img src="DoctypeMini.PNG" width="200">
+                </div>
+        </div>
+
+         <div class="ReglesCodage"> 
+            <h2>Règles de codage :</h2>
+
+            <p>Dans la pratique vous pourrez constater que la transgression des règles de codage que nous allons évoquer ne posera pas forcément de problèmes à votre navigateur qui est souvent très permissif. A contrario, un simple oubli de > ou de ", peut empêcher réellement votre contenu de s’afficher.</p>
+            <p>Prenez garde, même si votre page s’affiche telle que vous le souhaitez, un code « propre » et respectueux des règles est essentiel lors de la création de pages web pour les codeurs débutant comme pour les développeurs chevronnés. C’est la garantie d’une meilleure lisibilité du code, ce qui en facilite grandement la compréhension et ainsi le « débogage » (le fait de corriger les erreurs d’un programme).</p>
+
+            <h3>Règle n°1 : Imbrication des balises</h3>
+
+            <p>La première balise ouverte doit être la dernière balise fermée.</p>
+            <div class="Regle1">
+                <img src="Regle1.PNG" width="300">
+            </div>
+
+            <p>Dans l’exemple précédent, la balise < p > a été ouverte, puis c’est le tour de la balise < strong >. < strong > se trouve ainsi dans < p > < /p > et doit donc être refermée avant < /p >.</p>
+            <p>Sémantiquement les balises HTML ne peuvent pas toutes s’imbriquer les unes dans les autres. Les imbrications suivantes n’ont en effet aucun sens :</p>
+
+
+
+            <h3>Règle n°2 : Casse des balises</h3>
+            <h3>Règle n°3 : Guillemets obligatoires</h3>
+            <h3>Règle n°4 : Valeur pour attributs</h3>
 
         </div>
     </body>
 </html>
+
+
+<!-- Texte provenant en majorité de https://juliencrego.com/cours/presentation-du-langage-html-cours/ -->
