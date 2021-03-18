@@ -4,6 +4,22 @@
     transform: scale(0.5);
 }
 
-h1{
+h1, h2, h3{
     text-align: center;
+    margin: 20px;
+}
+
+h3{
+    text-align: left;
+}
+
+#wrapper{
+    width: 97%;
+    margin: auto;
+}
+
+#dukeNukem{
+    display: flex;
+    border: 1px solid black;
+    margin: 20px;
 }
