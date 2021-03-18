@@ -170,8 +170,13 @@ h1, h2, h3, h4, h5, H6 {
     text-align: center;
 }
 
+.logoHtml:hover {
+    transform: rotate(360deg) scale(1.1);
+    transition-duration: 1s;
+}
+
 p {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
@@ -192,4 +197,60 @@ p {
 
 .Exemple1:hover {
     transform: scale(1.5);
-    transition-duration: 1s
+    transition-duration: 1s;
+}
+
+.Exemple2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 250px;
+}
+
+.EmphaseHTML {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+} 
+
+.EmphaseHTML:hover {
+    transform: scale(1.3);
+    transition-duration: 1s;
+}
+
+.JournalSuedois {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.JournalSuedois:hover {
+    transform: scale(1.4);
+    transition-duration: 1s;
+}
+
+.baliseAttribut {
+    text-align: center;
+}
+
+.baliseAttribut:hover {
+    transform: scale(1.7);
+    transition-duration: 1s;
+}
+
+.PasBien {
+    text-align: center;
+}
+
+.PasBien:hover {
+    transform: scale(1.7);
+    transition-duration: 1s;
+}
+
+.Bien {
+    text-align: center;
+}
+
+.Bien:hover {
+    transform: scale(1.7);
+    transition-duration: 1s;
+}
