@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Présentation du langage HTML</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="CssHTML.css" rel="stylesheet">
 </head>
     <body>
         <header id="header">
@@ -44,7 +46,8 @@
             <img src="img/bandeau_dev.jpg" class="bandeau" alt="">  
         </header>  
                
-            <h1>Le langage HTML</h1>
+    <div class="wrapper">        
+            <h1>Le langage HTML, c'est quoi ?</h1>
         
         <div class="Introduction">
             <h2>Présentation du langage HTML (HyperText Markup Language)</h2>
@@ -77,9 +80,10 @@
                 <p>Si la construction d’une page Web reste la même avec ce type de logiciel, l’environnement peut toutefois rebuter les codeurs débutants d’autant que ces logiciels ne sont pas développés spécifiquement pour coder du HTML, mais vont souvent prendre en compte des langages plus complexes comme par exemple le PHP. C’est la raison pour laquelle un éditeur de texte simple est préconisé. Si vous souhaitez néanmoins essayer ce type de logiciel, vous pourrez en trouver un grand nombre gratuitement</p>
  
                 <div class="vscode">
-                    <img src="ExempleVSC.PNG" class="ExempleVSC" width="300">
+                    <img src="ImgHTML/ExempleVSC.PNG" class="ExempleVSC" width="300">
                     <figcaption>Ici un exemple de code HTML en utilisant Visual Studio Code</figcaption>
-                </div>    
+                </div>
+   
         </div>
         
         <div class="presentationBalises">
@@ -92,14 +96,13 @@
                 <p>Ici, je vous montre un exemple d'utilisation de balises dans un IDE comme Visual Studio Code.</p>
                     
                 <div class="Exemple1">
-                    <img src="exemple-balises-HTML.PNG" class="démo-balises" width="300">
+                    <img src="ImgHTML/exemple-balises-HTML.PNG" class="démo-balises" width="300">
                 </div>
                 
                 <p>Et voici le résultat en utilisant un navigateur :</p>
 
                 <div class="Exemple2">
-                    <img src="https://juliencrego.com/wp-content/uploads/html-cours_intro-02.png" class="ExempleBaliseTitre" width="600">
-                    <figcaption>Présentation des balises < H1 >,< H2 >,< H3 > ... et < p ></figcaption>
+                    <img src="https://juliencrego.com/wp-content/uploads/html-cours_intro-02.png" class="ExempleBaliseTitre" width="600">                   
                 </div>
 
                 <h3>Les balises d'emphase :</h3>
@@ -109,14 +112,14 @@
                 <p>Les deux balises sont < strong > < /strong > et < em > < /em>  qui permettent respectivement d’appliquer une emphase forte et modérée. Par défaut, les navigateurs vont distinguer visuellement ces balises lors de l’affichage en appliquant au contenu du gras pour la première balise (strong) et de l’italique pour la deuxième (em). Mais attention, ces balises ne sont pas des balises de gras ou d’italique mais bien des balises d’emphase. Il existe effectivement des balises sans valeur sémantique pour mettre du gras < b > < /b > et de l’italique < i > < /i >, mais elles ne doivent plus être utilisées aujourd’hui si vous tenez à respecter les bonnes pratiques qui préconisent l’utilisation d’un autre langage : le langage CSS pour la mise en forme d’une page Web.</p>
 
                 <div class="EmphaseHTML">
-                    <img src="EmphaseHTML.PNG" class="EmphaseHTML" width="300">
+                    <img src="ImgHTML/EmphaseHTML.PNG" class="EmphaseHTML" width="300">
                     <figcaption>Balises d'emphase sur VSCode</figcaption>
                 </div>
 
                 <p>Ce qui nous donnera :</p>
 
                 <div class="EmphaseNav">
-                    <img src="EmphaseNavigateur.PNG" class="EmphaseNav" width="300">
+                    <img src="ImgHTML/EmphaseNavigateur.PNG" class="EmphaseNav" width="300">
                 </div>
 
                 <h3>La valeur sémantique des balises :</h3>
@@ -145,21 +148,21 @@
                 <p>Il est possible d’ajouter des options, appelées <strong>attributs</strong>, aux balises HTML. Pour cela, il suffit de suivre la syntaxe suivante :</p>
 
                 <div class="baliseAttribut">
-                    <img src="balisesAttribut.PNG"width="300">
+                    <img src="ImgHTML/balisesAttribut.PNG"width="300">
                 </div>
 
                 <p>Les attributs sont placés dans la balise ouvrante, suivis du signe = et de la valeur entre guillemets. Il est possible de mettre autant d’attributs que vous le souhaitez en les mettant les uns à la suite des autres.</p>
                 <p>Voici un exemple pour la balise < p > < /p > où l’attribut align permet de définir l’alignement horizontal. Cet exemple est utilisé uniquement pour sa facilité de compréhension, en effet il s’agit d’une mauvaise pratique. L’alignement d’un paragraphe est une caractéristique de mise en forme et la totalité de la mise en forme doit être gérée via un langage que nous avons déjà évoqué plusieurs fois, le langage CSS.</p>
 
                 <div class="PasBien">
-                    <img src="MauvaisePratique.PNG" width="300">
+                    <img src="ImgHTML/MauvaisePratique.PNG" width="300">
                     <figcaption>Pas bien !</figcaption>
                 </div>
 
                 <p>Voici quelques exemples d’attributs qui ressemblent plus à ce que vous pouvez trouver sur Internet pour les sites respectant les bonnes pratiques.</p>
 
                 <div class="Bien">
-                    <img src="Bien.PNG" width="300">
+                    <img src="ImgHTML/Bien.PNG" width="300">
                     <figcaption>C'est mieux !</figcaption>
                 </div>
 
@@ -175,7 +178,7 @@
                 <p>La version 5 de HTML a considérablement simplifié la déclaration du doctype sous la forme :</p>
 
                 <div class="Doctype">
-                    <img src="DoctypeHTML.PNG" width="300">
+                    <img src="ImgHTML/DoctypeHTML.PNG" width="300">
                     <figcaption>Doctype HTML5</figcaption>
                 </div>
 
@@ -188,20 +191,20 @@
                 <p>La balise < title > < /title > est un élément incontournable qui se place dans l’en-tête. Elle permet de définir le titre de la page. Ce titre ne va pas s’afficher dans le corps de votre page, il sera visible dans l’onglet de votre navigateur, dans vos favoris lorsque vous enregistrez une page et sera également utilisé pour le référencement de votre page web.</p>
 
                 <div class="HeadTitle">
-                    <img src="HeadTitle.PNG" width="300">
+                    <img src="ImgHTML/HeadTitle.PNG" width="300">
                 </div>
 
                 <p>Ce qui nous affichera donc en titre d'onglet :</p>
 
                 <div class="HeadTitleResultat">
-                    <img src="HeadTitleResultat.PNG">
+                    <img src="ImgHTML/HeadTitleResultat.PNG">
                     
                 </div>
 
                 <h5>La balise < meta > </h5>
 
                 <div class="BaliseMeta">
-                    <img src="BaliseMeta.PNG" width="300">
+                    <img src="ImgHTML/BaliseMeta.PNG" width="300">
                 </div>
                 
                 <h6>Le charset</h6>
@@ -209,7 +212,7 @@
                 <p>Cette commande permet d’indiquer au navigateur l’encodage des caractères utilisé lors de la création d’une page web. L’encodage indiqué doit correspondre à celui utilisé par le logiciel pour créer la page web. La plupart des logiciels actuels utilisent par défaut l’encodage . Si vous ne précisez par le bon encodage, vous pouvez avoir des résultats assez surprenants lorsque vous insérez des caractères accentués comme dans l’exemple ci-dessous :</p>
                 
                 <div class="Charset">
-                    <img src="Charset.PNG" width="300">
+                    <img src="ImgHTML/Charset.PNG" width="300">
                 </div>
                 
                 <h6>La description</h6>
@@ -218,7 +221,7 @@
                 <p>Lorsque l’on recherche « Adrar pôle numérique » sur un moteur de recherche comme Google, on peut constater qu’il y a une description. Le texte en dessous du lien est défini en fonction des mots clés trouvés dans la page.</p>
 
                 <div class="ExempleMeta">
-                    <img src="AdrarMeta.PNG" width="300">
+                    <img src="ImgHTML/AdrarMeta.PNG" width="300">
                 </div>
 
                 <h5>La balise < style > < /style > </h5>
@@ -226,7 +229,7 @@
                 <p>La balise < style > < /style > permet d’intégrer du code CSS afin de définir la mise en forme d’une page web. Le principe des styles en CSS est très proche des styles sur un logiciel de traitement de texte.</p>
                 
                 <div class="style">
-                   <img src="BaliseStyle.PNG" width="200">
+                   <img src="ImgHTML/BaliseStyle.PNG" width="200">
                 </div>
 
                 <h4>L'élément < body > </h4>
@@ -242,7 +245,7 @@
                 <p>Voici donc la structure de base minimale que vous devriez avoir pour toutes vos pages :</p>
 
                 <div class="DoctypeMini">
-                    <img src="DoctypeMini.PNG" width="200">
+                    <img src="ImgHTML/DoctypeMini.PNG" width="200">
                 </div>
         </div>
 
@@ -256,20 +259,20 @@
 
             <p>La première balise ouverte doit être la dernière balise fermée.</p>
             <div class="Regle1">
-                <img src="Regle1.PNG" width="300">
+                <img src="ImgHTML/Regle1.PNG" width="300">
             </div>
 
             <p>Dans l’exemple précédent, la balise < p > a été ouverte, puis c’est le tour de la balise < strong >. < strong > se trouve ainsi dans < p > < /p > et doit donc être refermée avant < /p >.</p>
             <p>Sémantiquement les balises HTML ne peuvent pas toutes s’imbriquer les unes dans les autres. Les imbrications suivantes n’ont en effet aucun sens :</p>
             <div class="Regle1bis">
-                <img src="Regle1(2).PNG" width="300">
+                <img src="ImgHTML/Regle1(2).PNG" width="300">
             </div>
 
             <h3>Règle n°2 : Casse des balises</h3>
 
             <p>Les noms des balises et des attributs doivent être écrits en minuscules.</p>
             <div class="Regle2">
-                <img src="Regle2.PNG" width="300">
+                <img src="ImgHTML/Regle2.PNG" width="300">
             </div>
 
 
@@ -278,14 +281,14 @@
 
             <p>Toutes les valeurs des attributs doivent être entre guillemets doubles ou simples.</p>
             <div class="Regle3">
-                <img src="Regle3.PNG" width="300">
+                <img src="ImgHTML/Regle3.PNG" width="300">
             </div>
 
             <h3>Règle n°4 : Valeur pour attributs</h3>
 
             <p>Les attributs doivent toujours avoir une valeur associée. Il existe cependant certains attributs HTML qui échappent à cette règle et peuvent se passer d’une valeur. C’est le cas par exemple de l’attribut checked qui permet de cocher une case par défaut dans un formulaire.</p>
             <div class="Regle4">
-                <img src="Regle4.PNG" width="400">
+                <img src="ImgHTML/Regle4.PNG" width="400">
 
         <div class="BonnesPratiques">
             <H2>Conseils et bonnes pratiques</H2>
@@ -294,13 +297,13 @@
             
             <p>N’hésitez surtout pas à aérer votre code ! Un code aéré sera beaucoup plus lisible qu’un code compact. Il est tout à fait possible de rédiger une page sur une seule ligne mais cela complique grandement sa lecture pour le développeur.</p>
             <div class="CodeUneLigne">
-                <img src="CodeUneLigne.PNG">
+                <img src="ImgHTML/CodeUneLigne.PNG">
             </div>
 
             <p>Lorsque vous rédigez votre code HTML, vous pouvez aérer votre code en ajoutant des retours chariot (touche entrée du clavier). Vous gagnerez en lisibilité et les retours chariot ne seront pas pris en compte lors de l’affichage.</p>
             <p>C’est le cas également des espaces consécutifs. Si vous ajoutez 10 espaces consécutifs dans votre texte, un seul sera visible lors de l’affichage de la page dans le navigateur.</p>
             <div class="CodeAere">
-                <img src="codeaéré.PNG">
+                <img src="ImgHTML/codeaéré.PNG">
             </div>
 
             <H3>Indentation des balises</h3>
@@ -308,7 +311,7 @@
             <p>Toujours dans un souci de lisibilité, il est très fortement recommandé d’indenter son code. L’indentation consiste à décaler le code à chaque fois que vous imbriquez une balise de type bloc dans une autre, comme vous avez pu le voir dans les exemples précédents.</p>
             <p>L’indentation améliore la lisibilité et permet de mieux voir l’imbrication et la hiérarchisation des éléments HTML d’une page. Pour décaler votre code, il suffit d’insérer une <strong>tabulation</strong> en début de ligne.</p>  
             <div class="CodeEspace">
-                <img src="ExempleEspacementCode.PNG">
+                <img src="ImgHTML/ExempleEspacementCode.PNG">
             </div>
 
             <h3>Saisie des balises fermantes</h3>
@@ -325,12 +328,12 @@
             <p>Tous les langages informatiques permettent de commenter le code, le HTML ne fait pas exception en la matière. Il est donc possible d’ajouter des commentaires dans votre code afin d’en faciliter la relecture sans que ces commentaires ne soient visibles directement dans votre navigateur.</p>
             <p>Pour insérer un commentaire il suffit de saisir < !-- au début du commentaire et -- > à la fin du commentaire.
             <div class="Commentaire">
-                <img src="Commentaire.PNG">
+                <img src="ImgHTML/Commentaire.PNG">
             </div>
             <p>En HTML, les commentaires ne sont pas complètement invisibles n’importe quel internaute qui affichera le code source de la page pourra les voir.</p>
         </div>
        </div>
-
+    </div>
          <footer>
         <div class="colonne">
             <div class="col1">
