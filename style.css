@@ -1,4 +1,11 @@
 /*-------------------------------
+------- NOTE POUR + TARD --------
+--------------------------------*/
+
+/*Premier breakpointpour media-queries : width à 1300px
+--> <NAV> Recherche et Contact deviennent des icônes*/
+
+/*-------------------------------
 ------------RESET CSS------------
 --------------------------------*/
 
@@ -44,15 +51,15 @@ nav {
     justify-content: flex-end;
     font-variant: all-small-caps;
     font-size: 1rem;
-    padding: 15px 0;
+    padding: 15px 0 15px 275px;
     margin-right: 50px;
 }
 
-nav ul img {
+nav img {
     height: 0.7rem;
 }
 
-nav ul li {
+nav ul li, #open {
     font-size: 1.1rem;
     font-weight: bold;
     margin-right: 30px;
@@ -65,7 +72,7 @@ nav a {
     color: #000;
 }
 
-nav a:hover {
+nav a:hover, #open:focus {
     color:#c10230;
 }
 
@@ -81,6 +88,13 @@ header ul {
 
 #MiniJeux {
     display: none;
+    margin: 0px 157px 0 0;
+    position: absolute;
+    top:5px;
+}
+
+#open:focus-within + #MiniJeux {
+    display: block;
 }
 
 .recherche, .contact {
@@ -112,6 +126,18 @@ header ul {
 .bandeau {
     max-width: 1350px;
     width: 100%;
+}
+
+#MiniJeux ul {
+    background-color: #fff;
+    padding: 5px 10px 5px 10px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav > ul, .recherche, .contact {
+    z-index: 100;
 }
 
 /*-------------------------------
