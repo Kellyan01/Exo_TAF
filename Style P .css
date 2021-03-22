@@ -1,9 +1,10 @@
+
 h1{
  text-align: left;font-size: large; height: 60%;
  
- color: red;
+ color:black;
  font-size: 50px;
-text-decoration: underline red;
+text-decoration: underline black;
 margin-top: 70px;
  margin-left: 40px;
 }
@@ -27,12 +28,11 @@ p{
 }
  
 .Logo{
-    border:solid 20px red;
-    border-radius: 10%;
-    background-color: rgb(0, 132, 255) opacity: 0.5
-    ;
-    width: 20%;
-    height: 20%;
+ 
+    border-radius: 40%;
+    width: 25%;
+    height: 25%;
+    background-color: #f3f6f9;
 
 
 }
@@ -46,11 +46,34 @@ p{
     transform: scale(2);
     transition-duration: 1s;
 
-    
 }
 
-span{ color: red;}
+span{ color:#c10230;}
 
-u{text-decoration: underline black;}
+u{  text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #FFCD00;
+    text-decoration-thickness: 4px;}
 
-a{ color: cornflowerblue;}
+a{ color: black
+}
+
+a:hover{color:#c10230;}
+.Logo{ float: right;
+  
+}
+.Sommaire{
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 50px;
+    margin-left: 15px;
+    padding-bottom: 20px;
+    margin-right: 50px;
+    background-color:#f3f6f9;
+    border-radius: 5%;
+    
+}
+.Sommaire ul{
+    list-style: none;
+}
+ul{list-style: none;}
