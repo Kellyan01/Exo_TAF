@@ -151,7 +151,6 @@ nav > ul, .recherche, .contact {
     width: 100%;
     z-index: 10;
     position: relative;
-
     height: 1000px;
 }
 
@@ -165,6 +164,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
+    width: 100%;   
 }
 
 footer .colonne {   

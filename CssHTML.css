@@ -30,6 +30,8 @@ p {
     margin-bottom: 20px;
     padding-left: 2%;
     padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .vscode {
@@ -158,6 +160,11 @@ p {
 
 .DoctypeMini {
     text-align: center;
+}
+
+.DoctypeMini:hover {
+    transform: scale(1.5);
+    transition-duration: 1s;
 }
 
 .Regle1, .Regle1bis, .Regle2, .Regle3, .Regle4 {
