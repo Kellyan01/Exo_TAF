@@ -186,7 +186,7 @@ p {
 }
 
 .ExempleVSC:hover {
-    transform: scale(3);
+    transform: scale(2.5);
     transition-duration: 1s
 }
 
@@ -291,10 +291,12 @@ p {
 
 .Charset {
     text-align: center;
+    transform: scale(1.2);
 }
 
 .ExempleMeta {
     text-align: center;
+    transform: scale(1.5);
 }
 
 .style {
@@ -360,3 +362,16 @@ p {
 .Commentaire {
     text-align: center;
 }
+
+.EmphaseNav {
+    text-align: center;
+}
+
+.EmphaseNav:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+.Charset:hover {
+    transform: scale(1.6);
+    transition-duration: 1s;
