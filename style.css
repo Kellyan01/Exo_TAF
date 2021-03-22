@@ -59,7 +59,7 @@ nav img {
     height: 0.7rem;
 }
 
-nav ul li, #open {
+nav ul li, #MiniJeuxOpen, #MiniJeuxClose {
     font-size: 1.1rem;
     font-weight: bold;
     margin-right: 30px;
@@ -88,13 +88,25 @@ header ul {
 
 #MiniJeux {
     display: none;
-    margin: 0px 157px 0 0;
+    margin: 0px 257px 0 0;
     position: absolute;
     top:5px;
 }
 
-#open:focus-within + #MiniJeux {
+#MiniJeux:target {
     display: block;
+}
+
+#MiniJeuxClose img {
+    transform: rotate(180deg);
+}
+
+#MiniJeux:not(:target) ~ #MiniJeuxClose {
+	display: none;
+}
+
+#MiniJeux:target ~ #MiniJeuxOpen {
+    display: none;
 }
 
 .recherche, .contact {
@@ -136,7 +148,7 @@ header ul {
     flex-direction: column;
 }
 
-nav > ul, .recherche, .contact {
+nav > ul, .recherche, .contact, #MiniJeuxClose {
     z-index: 100;
 }
 
@@ -151,9 +163,14 @@ nav > ul, .recherche, .contact {
     width: 100%;
     z-index: 10;
     position: relative;
-
-    height: 1000px;
+    padding: 40px 50px;
 }
+
+/*-------------------------------
+----------ACCUEIL DEV------------
+--------------------------------*/
+
+
 
 /*-------------------------------
 ------------FOOTER---------------
@@ -177,14 +194,18 @@ footer .colonne {
     margin-bottom: 30px;
 }
 
-footer h5 {
-    font-size: 0.8rem;
+.col1, .col2, .col3, .col4 {
+    padding: 15px;
+}
+
+footer h5, footer h4 {
+    font-size: 0.85rem;
     font-weight: bold;
     margin-bottom: 30px;
 }
 
 footer p {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 .col1 img {
@@ -192,21 +213,76 @@ footer p {
     width: 150px;
 }
 
+.col3 > div {
+    border-radius: 10px;
+    background-color: #283035;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.col3 > div a {
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.col3 h4 {
+    margin-bottom: 10px;
+}
+
 .col3 a {
     color: #ffcd00;
+    font-size: 0.75rem;
+}
+
+.col3 em, .col4 em {
+    color: #ffcd00;
+    font-style: normal;
+}
+
+.col4 a {
+    color: #fff;
+}
+
+.col4 a div {
+    border: 2px #fff solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-variant: all-small-caps;
+    height: 50px;
+    margin-top: 30px;
+    padding-left: 10px;
+}
+
+.col3 a:hover, .col3 a:hover em, .col4 a:hover div em{
+    color: #ffcd00;
+    text-decoration: underline;
+    font-style: normal;
+}
+
+.col3 a:hover span, .col4 a:hover span{
+    color: #c10230;
+    text-decoration:none;
 }
 
 footer .mention {
     background-color: #283035;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    height: 100px;
+    padding: 30px;
 }
 
 footer .mention a {
-    color: #fff;
+    color: #5c7482;
     text-align: center;
     width: 100px;
     margin: 0 50px 30px 0;
+}
+
+footer .mention a:hover {
+    color: #c10230;
 }
 
 footer .mention img {
@@ -214,4 +290,22 @@ footer .mention img {
     margin-top: 30px;
     transform: rotate(180deg);
     width: 50px;
+}
+
+footer .mention ul {
+    font-size: 0.85rem;
+    list-style: none;
+}
+
+footer .mention ul a {
+    color: #ffcd00;
+}
+
+footer .mention ul a:hover {
+    color: #ffcd00;
+}
+
+footer .mention ul li {
+    float: left;
+    margin-bottom: 25px;
 }
