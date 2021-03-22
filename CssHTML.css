@@ -242,6 +242,11 @@ p {
     transition-duration: 1s;
 }
 
+.Sommaire {
+    position: sticky;
+    top: 0px;
+}
+
 .Sommaire ul {
     text-align: left;
     margin-top: 5%;
