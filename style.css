@@ -182,7 +182,6 @@ footer {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
-    width: 200%;
 }
 
 footer .colonne {   
