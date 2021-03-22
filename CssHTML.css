@@ -252,20 +252,30 @@ p {
     margin-top: 5%;
     list-style: none;
     background-color: #F3F6F9;
+    border-radius: 10px;
     padding-bottom: 10px;
 }
 
 .Sommaire p {
-    text-decoration: underline;
+    text-decoration: underline yellow 8px;
 }
 
 .Sommaire li {
     margin-left: 5%;
 }
 
+a{
+    color: black;
+}
+
 a:visited {
     color: black;
   }
+
+  a:hover{
+    color: #A8022A;
+    text-decoration: underline;
+}
 
   .Sommaire2 ul {
     text-align: left;
