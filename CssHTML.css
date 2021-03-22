@@ -254,3 +254,109 @@ p {
     transform: scale(1.7);
     transition-duration: 1s;
 }
+
+.Doctype {
+    text-align: center;
+}
+
+.Doctype:hover {
+    transform: scale(1.4);
+    transition-duration: 1s;
+}
+
+.HeadTitle {
+    text-align: center;
+}
+
+.HeadTitle:hover {
+    transform: scale(1.4);
+    transition-duration: 1s;
+}
+
+.HeadTitleResultat {
+    text-align: center;
+}
+
+.BaliseMeta {
+    text-align: center;
+}
+
+.HeadTitleResultat {
+    text-align: center;
+}
+
+.BaliseMeta {
+    text-align: center;
+}
+
+.Charset {
+    text-align: center;
+}
+
+.ExempleMeta {
+    text-align: center;
+}
+
+.style {
+    text-align: center;
+}
+
+.DoctypeMini {
+    text-align: center;
+}
+
+.Regle1, .Regle1bis, .Regle2, .Regle3, .Regle4 {
+    text-align: center;
+}
+
+
+.Regle1:hover {
+    transform: scale(1.4);
+    transition-duration: 1s;
+}
+
+
+.Regle1bis:hover {
+    transform: scale(1.8);
+    transition-duration: 1s;
+}
+
+.Regle2:hover {
+    transform: scale(1.4);
+    transition-duration: 1s;
+}
+
+.Regle3:hover {
+    transform: scale(1.4);
+    transition-duration: 1s;
+}
+
+.Regle4:hover {
+    transform: scale(1.4);
+    transition-duration: 1s;
+}
+
+
+.CodeUneLigne  {
+    text-align: center;
+    transform: scale(0.6);
+    margin-inline-end: 110%;
+    margin-inline-end: 110%;
+}
+
+.CodeUneLigne:hover {
+    transform: scale(0.8);
+    transition-duration: 1s;
+}
+
+.CodeAere {
+    text-align: center;
+}
+
+.CodeEspace {
+    text-align: center;
+}
+
+.Commentaire {
+    text-align: center;
+}
