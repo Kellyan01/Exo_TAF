@@ -1,167 +1,19 @@
-/* FONTS */
-
-@font-face {
-    font-family: 'montserratblack';
-    src: url('montserrat-black-webfont.woff2') format('woff2'),
-         url('montserrat-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'montserratblack_italic';
-    src: url('montserrat-blackitalic-webfont.woff2') format('woff2'),
-         url('montserrat-blackitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'montserratbold';
-    src: url('montserrat-bold-webfont.woff2') format('woff2'),
-         url('montserrat-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'montserratbold_italic';
-    src: url('montserrat-bolditalic-webfont.woff2') format('woff2'),
-         url('montserrat-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'montserratextrabold';
-    src: url('montserrat-extrabold-webfont.woff2') format('woff2'),
-         url('montserrat-extrabold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'montserratextrabold_italic';
-    src: url('montserrat-extrabolditalic-webfont.woff2') format('woff2'),
-         url('montserrat-extrabolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'montserratextralight';
-    src: url('montserrat-extralight-webfont.woff2') format('woff2'),
-         url('montserrat-extralight-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'montserratextralight_italic';
-    src: url('montserrat-extralightitalic-webfont.woff2') format('woff2'),
-         url('montserrat-extralightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'montserratmedium';
-    src: url('montserrat-medium-webfont.woff2') format('woff2'),
-         url('montserrat-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'montserratmedium_italic';
-    src: url('montserrat-mediumitalic-webfont.woff2') format('woff2'),
-         url('montserrat-mediumitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'montserratregular';
-    src: url('montserrat-regular-webfont.woff2') format('woff2'),
-         url('montserrat-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'montserratsemibold';
-    src: url('montserrat-semibold-webfont.woff2') format('woff2'),
-         url('montserrat-semibold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 /* Styles generaux */
 
-.wrapper {
-    margin-left: 500px;
-    margin-right: 500px;
-    text-align: left;
-
+h1 {
+    padding-top:5%;
+    padding-left: 2%;
 }
 
+h2 {
+    padding-top:5%;
+    padding-left: 2%;
+}
 
-h1, h2, h3, h4, h5, H6 {
-    font-family: 'montserratextrabold';
-    src: url('/Font/montserrat-extrabold-webfont.woff2') format('woff2'),
-         url('/Font/montserrat-extrabold-webfont.woff') format('woff');
-    font-weight: 1000;
-    font-style:normal;
-    text-align: left;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    
-    
+h3 {
+    padding-top:5%;
+    padding-left: 2%;
 }
 
 .logoHtml {
@@ -176,6 +28,8 @@ h1, h2, h3, h4, h5, H6 {
 p {
     margin-top: 30px;
     margin-bottom: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .vscode {
@@ -292,6 +146,7 @@ p {
     transform: scale(1.2);
 }
 
+
 .ExempleMeta {
     text-align: center;
     transform: scale(1.5);
@@ -373,3 +228,5 @@ p {
 .Charset:hover {
     transform: scale(1.6);
     transition-duration: 1s;
+}
+

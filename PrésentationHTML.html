@@ -18,33 +18,37 @@
                     <li><a href="PrésentationHTML.html">HTML</a></li>
                     <li><a href="PrésentationCSS.html">CSS</a></li>
                     <li><a href="pgJavascript.html">Javascript</a></li>
-                    <li><a rel="start home" href="#MiniJeux" id="open" class="burger" title="Mini Jeux">MINI-JEUX <img src="img/triangle.png" alt="menu déroulant"></a></li>
-                </ul>    
-                <div class="recherche"><h6>Rechercher</h6></div>
-                <div class="contact"><h6>Contact-nous</h6></div>
-            </nav>
+                </ul>
+                
+                <a rel="start home" href="#MiniJeux" id="open"><span>MINI-JEUX <img src="img/triangle.png" alt="menu déroulant"></span></a>
+                
+                <div id="MiniJeux">
+                    <ul>    
+                        <li><a href="pgMiniJeux.html">Duke Nukem</a></li>
+                        <li><a href="">Code Monkey</a></li>
+                        <li><a href="">Coding Game</a></li>
+                        <li><a href="">CSS Diner</a></li>
+                        <li><a href="">Flexbox Froggy</a></li>
+                        <li><a href="">Flexbox Defense</a></li>
+                        <li><a href="">Code Combat</a></li>
+                        <li><a href="">Ruby Warrior</a></li>
+                        <li><a href="">Untrusted</a></li>
+                        <li><a href="">Code Hunt</a></li>
+                        <li><a href="">RoboCode</a></li>
+                        <li><a href="">CheckIO and Empire of Code</a></li>
+                        <li><a href="">VIM Adventures</a></li>
+                        <li><a href="">Cyber Dojo</a></li>
+                        <li><a href="">Elevator Saga</a></li>
+                        <li><a href="">Code Wars</a></li>
+                    </ul>
+                </div>
 
-            <ul id="MiniJeux">    
-                <li><a href="pgMiniJeux.html">Duke Nukem</a></li>
-                <li><a href="">Code Monkey</a></li>
-                <li><a href="">Coding Game</a></li>
-                <li><a href="">CSS Diner</a></li>
-                <li><a href="">Flexbox Froggy</a></li>
-                <li><a href="">Flexbox Defense</a></li>
-                <li><a href="">Code Combat</a></li>
-                <li><a href="">Ruby Warrior</a></li>
-                <li><a href="">Untrusted</a></li>
-                <li><a href="">Code Hunt</a></li>
-                <li><a href="">RoboCode</a></li>
-                <li><a href="">CheckIO and Empire of Code</a></li>
-                <li><a href="">VIM Adventures</a></li>
-                <li><a href="">Cyber Dojo</a></li>
-                <li><a href="">Elevator Saga</a></li>
-                <li><a href="">Code Wars</a></li>
-            </ul>
+                <div class="recherche"><h6>Recherche</h6></div>
+                <div class="contact"><h6>Contact</h6></div>
+            </nav>
             
             <img src="img/bandeau_dev.jpg" class="bandeau" alt="">  
-        </header>  
+        </header>
                
     <div class="wrapper">        
             <h1>Le langage HTML, c'est quoi ?</h1>
@@ -130,7 +134,7 @@
                 <p>Vous êtes d’ailleurs capable de distinguer bien d’autres choses comme des dates, des numéros de téléphone, des adresses postales, etc.</p>
                 <p>Si un humain peut faire cette distinction, ce n’est pas forcément le cas des robots utilisés par les moteurs de recherche. La sémantique HTML est donc là pour pallier à ce problème.</p>
                 <p>Un moteur de recherche n’a pas besoin de savoir si un texte est en gras, en couleurs ou avec un corps de texte plus ou moins important, il ne se base pas sur la mise en forme. Pour permettre aux moteurs de recherche de mieux identifier les éléments importants de contenu afin d’avoir une indexation plus performante des pages, il leur faut un balisage sémantique.</p>
-                <p>Si par exemple vous utilisez la balise < h1 > < /h1 >, le moteur de recherche saura qu’il s’agit d’un titre. De la même manière si vous utilisez la balise < strong > < /strong >, il saura que cela concerne des mots-clé importants. A contrario, si vous effectuez la mise en forme d’un paragraphe <p></p> avec du gras, de la couleur et une taille de caractère plus importante pour l’afficher comme un titre, cela fonctionnera pour les internautes qui visiteront le site, mais cela ne pourra pas être interprété comme tel par un moteur de recherche, ni par un lecteur d’écran utilisé par des personnes avec des déficiences visuelles. La sémantique HTML est donc essentielle pour un web plus « intelligent ».</p>
+                <p>Si par exemple vous utilisez la balise < h1 > < /h1 >, le moteur de recherche saura qu’il s’agit d’un titre. De la même manière si vous utilisez la balise < strong > < /strong >, il saura que cela concerne des mots-clé importants. A contrario, si vous effectuez la mise en forme d’un paragraphe < p > < /p > avec du gras, de la couleur et une taille de caractère plus importante pour l’afficher comme un titre, cela fonctionnera pour les internautes qui visiteront le site, mais cela ne pourra pas être interprété comme tel par un moteur de recherche, ni par un lecteur d’écran utilisé par des personnes avec des déficiences visuelles. La sémantique HTML est donc essentielle pour un web plus « intelligent ».</p>
 
                 <div class="JournalSuedois">
                     <img src="https://juliencrego.com/wp-content/uploads/html-cours_intro-04-186x300.jpeg">
@@ -335,7 +339,7 @@
         </div>
        </div>
     </div>
-         <footer>
+    <footer>
         <div class="colonne">
             <div class="col1">
                 <h5>Hôtel de Région de Toulouse</h5>
@@ -355,16 +359,16 @@
             <div class="col3">
                 <h5>Nos Dernières offres d'emploi</h5>
                 <div>
-                    Annonce 1
+                    <p>Annonce 1</p>
                 </div>
                 <div>
-                    Annonce 2
+                    <p>Annonce 2</p>
                 </div>
 
                 <a href="https://www.adrar-formation.com/">En Savoir Plus -></a>
             </div>
 
-            <div class="col3">
+            <div class="col4">
                 <h5>Contact</h5>
                 <p>Composez le 3010 pour contacter la Région Occitanie / Pyrénées-Méditerranée (service et appel gratuits)</p>
                 <a href="https://www.laregion.fr/Contactez-la-Region"><div>Nous Contacter</div></a>
@@ -375,7 +379,7 @@
         <div class="mention">
             <a href="#header"><img src="img/triangle.png" alt="haut de page"><p>Haut de Page</p></a>
         </div>
-    </footer>   
+    </footer>
     </body>
 </html>
 
