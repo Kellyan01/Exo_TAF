@@ -153,6 +153,32 @@ nav > ul, .recherche, .contact, #MiniJeuxClose {
 }
 
 /*-------------------------------
+-----------RECHERCHE-------------
+--------------------------------*/
+
+#body {
+    background-color: #ffcd00;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container div:first-child {
+    display: flex;
+    flex-direction: row;
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+    align-self: flex-end;
+    justify-content: left;
+}
+
+.container div:first-child div:first-child {
+    background-color: #fff;
+    height: 15px;
+    width: 5px;
+}
+
+/*-------------------------------
 ------------WRAPPER--------------
 --------------------------------*/
 .wrapper {
@@ -170,6 +196,57 @@ nav > ul, .recherche, .contact, #MiniJeuxClose {
 ----------ACCUEIL DEV------------
 --------------------------------*/
 
+.chapeau, .chapeau h1, .sommaire, #partie1, #partie2, #partie3  {
+    margin-bottom: 30px;
+}
+
+.chapeau {
+    font-weight: bold;
+    line-height: 1.6em;
+}
+
+#partie1, #partie2, #partie3  {
+    line-height: 1.6em;
+}
+
+#partie1 h2, #partie2 h2, #partie3 h2  {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sommaire {
+    background-color: #f3f6f9;
+    border-radius: 10px;
+    font-size: 0.75em;
+    padding: 15px 20px 10px 20px;
+}
+
+.sommaire h3 {
+    margin-bottom: 10px;
+    text-decoration: underline #ffcd00 5px;
+}
+
+.sommaire ul {
+    list-style: none;
+}
+
+.sommaire li {
+    margin-bottom: 10px;
+}
+
+.sommaire a span {
+    color: #ffcd00;
+}
+
+.sommaire a {
+    color: #000;
+    font-weight: bold;
+}
+
+.sommaire a:hover, .sommaire a:hover span {
+    color: #c10230;
+    text-decoration: underline;
+}
 
 
 /*-------------------------------
@@ -206,6 +283,8 @@ footer h5, footer h4 {
 
 footer p {
     font-size: 0.85rem;
+    margin: 0;
+    color: #fff;
 }
 
 .col1 img {
