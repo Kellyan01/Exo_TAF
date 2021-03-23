@@ -1,9 +1,9 @@
 
 h1{
- text-align: left;font-size: large; height: 60%;
+ text-align: left;height: 60%;
  
  color:black;
- font-size: 50px;
+
 text-decoration: underline black;
 margin-top: 70px;
  margin-left: 40px;
@@ -11,7 +11,7 @@ margin-top: 70px;
 
 
 h2{
-    font-size: 40px;
+    
     margin-top: 40px;
     margin-left: 70px;
     padding-left: 10px;
@@ -23,7 +23,7 @@ h2{
 }
 
 p{
-    font-size: 20px;
+    
     text-align: justify;
    margin: 50px;
     color: black;
@@ -43,7 +43,7 @@ p{
 .capture{
     border: solid 3px black;
     width: 30%; height: 30%;
-    margin-left: 70px;
+    margin-left: 300px;
 }
 .capture:hover{
     transform: scale(2);
@@ -56,12 +56,14 @@ span{ color:#c10230;}
 u{  text-decoration-line: underline;
     text-decoration-style: solid;
     text-decoration-color: #FFCD00;
-    text-decoration-thickness: 4px;}
+    text-decoration-thickness: 4px;
+}
 
 a{ color: black
 }
 
-a:hover{color:#c10230;}
+a:hover{color:#c10230;
+text-decoration: underline;}
 .Logo{ float: right;
   
 }
