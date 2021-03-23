@@ -8,19 +8,21 @@
 <body>
 <div id="body">
     <div class="container">
-        <div>
+        <div class="titre_recherche">
             <div>
-                <div></div>
+                <div class="rectangle_blanc"></div>
                 <h1>Recherche</h1>
             </div>
-            <a href="index.html">Fermer <span>X</span></a>
+            <a href="index.html"><span>Fermer</span> X</a>
         </div>
 
-        <div>
+        <div class="formulaire">
             <form action="post">
-                <label for="rechercher"></label>
-                <input type="text" id="rechercher" value="Rechercher">
-                <input type="submit" value="Rechercher">
+                <label for="rechercher">Que Cherchez-vous?</label>
+                <div class="champ_recherche">
+                    <input type="text" id="rechercher" value="Rechercher">
+                    <input type="submit" value="> Rechercher" class="submit">
+                </div>
             </form>
         </div>
     </div>
