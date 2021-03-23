@@ -45,6 +45,10 @@ header .logo {
     position: absolute;
 }
 
+#header a {
+    margin: 0;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -68,11 +72,20 @@ nav ul li, #MiniJeuxOpen, #MiniJeuxClose {
     justify-content: center;
 }
 
+#header #MiniJeuxOpen span, #MiniJeuxClose span {
+    color: #000;
+    margin-right: 30px;
+}
+
+#header #MiniJeuxOpen:hover span, #header #MiniJeuxClose:hover span {
+    color:#c10230;
+}
+
 nav a {
     color: #000;
 }
 
-nav a:hover, #open:focus {
+nav a:hover {
     color:#c10230;
 }
 
@@ -334,6 +347,11 @@ footer .colonne {
     margin-bottom: 30px;
 }
 
+.footer a {
+    display: inline;
+    margin: 0;
+}
+
 .col1, .col2, .col3, .col4 {
     padding: 15px;
 }
@@ -376,12 +394,16 @@ footer p {
     font-size: 0.75rem;
 }
 
+.col3 a span {
+    color: #ffcd00;
+}
+
 .col3 em, .col4 em {
     color: #ffcd00;
     font-style: normal;
 }
 
-.col4 a {
+.col4 a, .col4 a span {
     color: #fff;
 }
 
