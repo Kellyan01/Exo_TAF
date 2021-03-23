@@ -62,7 +62,8 @@ u{  text-decoration-line: underline;
 a{ color: black
 }
 
-a:hover{color:#c10230;}
+a:hover{color:#c10230;
+text-decoration: underline;}
 .Logo{ float: right;
   
 }
