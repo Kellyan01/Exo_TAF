@@ -45,6 +45,10 @@ header .logo {
     position: absolute;
 }
 
+#header a {
+    margin: 0;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -68,11 +72,20 @@ nav ul li, #MiniJeuxOpen, #MiniJeuxClose {
     justify-content: center;
 }
 
+#header #MiniJeuxOpen span, #MiniJeuxClose span {
+    color: #000;
+    margin-right: 30px;
+}
+
+#header #MiniJeuxOpen:hover span, #header #MiniJeuxClose:hover span {
+    color:#c10230;
+}
+
 nav a {
     color: #000;
 }
 
-nav a:hover, #open:focus {
+nav a:hover {
     color:#c10230;
 }
 
@@ -209,7 +222,7 @@ nav > ul, .recherche, .contact, #MiniJeuxClose {
     width: 100%;
 }
 
-.formulaire label {
+.formulaire label, .formulaire_contact label {
     font-weight: bold;
     font-size: 1.3em;
 }
@@ -235,6 +248,70 @@ nav > ul, .recherche, .contact, #MiniJeuxClose {
     font-size: 1em;
     padding:15px 0 ;
     border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/*-------------------------------
+------------CONTACT--------------
+--------------------------------*/
+.titre_contact {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    font-size: 0.75rem;
+}
+
+.titre_contact div:first-child {
+    display: flex;
+}
+
+.titre_contact a {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.titre_contact a span {
+    font-size: 0.75em;
+    margin-top: -20px;
+}
+
+
+.formulaire_contact {
+    border-radius: 10px;
+    padding:30px 0;
+    height: 150px;
+    width: 100%;
+}
+
+.formulaire_contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulaire_contact h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.formulaire_contact label {
+    margin-bottom: 10px;
+}
+
+.formulaire_contact form input[type="text"] {
+    border: #ccc 1px solid;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.formulaire_contact form input {
+    border-radius: 5px;
+}
+
+.formulaire_contact form input[type="submit"] {
+    align-self: flex-end;
+    cursor: pointer;
 }
 
 /*-------------------------------
@@ -334,6 +411,11 @@ footer .colonne {
     margin-bottom: 30px;
 }
 
+.footer a {
+    display: inline;
+    margin: 0;
+}
+
 .col1, .col2, .col3, .col4 {
     padding: 15px;
 }
@@ -376,12 +458,16 @@ footer p {
     font-size: 0.75rem;
 }
 
+.col3 a span {
+    color: #ffcd00;
+}
+
 .col3 em, .col4 em {
     color: #ffcd00;
     font-style: normal;
 }
 
-.col4 a {
+.col4 a, .col4 a span {
     color: #fff;
 }
 
