@@ -1,43 +1,33 @@
 
 h1{
- text-align: left;height: 60%;
- 
- color:black;
-
-text-decoration: underline black;
-margin-top: 70px;
- margin-left: 40px;
+    text-align: left;height: 60%;
+    color:black;
+    text-decoration: underline black;
+    margin-top: 70px;
+    margin-left: 40px;
 }
 
-
 h2{
-    
     margin-top: 40px;
     margin-left: 70px;
     padding-left: 10px;
     color: #000;
-  border-left:  solid 5px #FFCD00;
-    
+    border-left:  solid 5px #FFCD00;
     text-decoration: underline;
-    
 }
 
 p{
-    
     text-align: justify;
-   margin: 50px;
+    margin: 50px;
     color: black;
 }
  
 .Logo{
- 
     border-radius: 25%;
     width: 18%;
     height: 18%;
     background-color: #f3f6f9;
-    margin-top: 50px;
-
-
+    margin-top: 30px;
 }
 
 .capture{
@@ -45,13 +35,15 @@ p{
     width: 30%; height: 30%;
     margin-left: 300px;
 }
+
 .capture:hover{
     transform: scale(2);
     transition-duration: 1s;
-
 }
 
-span{ color:#c10230;}
+span {
+    color:#c10230;
+}
 
 u{  text-decoration-line: underline;
     text-decoration-style: solid;
@@ -59,15 +51,20 @@ u{  text-decoration-line: underline;
     text-decoration-thickness: 4px;
 }
 
-a{ color: black
+a {
+    color: black
 }
 
-a:hover{color:#c10230;
-text-decoration: underline;}
-.Logo{ float: right;
-  
+a:hover {
+    color:#c10230;
+    text-decoration: underline;
 }
-.Sommaire{
+
+.Logo {
+    float: right;
+}
+
+.Sommaire {
     text-align: left;
     padding-top: 20px;
     padding-left: 20px;
@@ -77,9 +74,12 @@ text-decoration: underline;}
     margin-top: 20px;
     background-color:#f3f6f9;
     border-radius: 5%;
-    
 }
-.Sommaire ul{
+
+.Sommaire ul {
     list-style:none;
 }
-ul{list-style: none;}
+
+ul {
+    list-style: none;
+}
