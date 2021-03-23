@@ -10,51 +10,47 @@
     <title>Mini-jeux</title>
 </head>
 <body>
-    <header id="header">
-        <img
-          src="img/logo_region.png"
-          class="logo"
-          alt="logo de la Région Occitanie"/>
-  
-        <nav>
-          <ul>
+  <header id="header">
+    <img src="img/logo_region.png" class="logo" alt="logo de la Région Occitanie">
+
+    <nav>
+        <ul>
             <li><a href="index.html">Nous les Développeurs</a></li>
             <li><a href="PrésentationHTML.html">HTML</a></li>
-            <li><a href="PrésentationCSS.html">CSS</a></li>
+            <li><a href="PresentationCSS.html">CSS</a></li>
             <li><a href="pgJavascript.html">Javascript</a></li>
-            <li>
-              <a
-                rel="start home"
-                href="pgMiniJeux.html" id="open" class="burger" title="Mini Jeux"
-                >Mini-jeux<img src="img/triangle.png" alt="menu déroulant"
-              /></a>
-            </li>
-          </ul>
-          <div class="recherche"><h6>Rechercher</h6></div>
-          <div class="contact"><h6>Contact-nous</h6></div>
-        </nav>
-  
-        <ul id="MiniJeux">
-          <li><a href="pgMiniJeux.html">Duke Nukem</a></li>
-          <li><a href="">Code Monkey</a></li>
-          <li><a href="">Coding Game</a></li>
-          <li><a href="">CSS Diner</a></li>
-          <li><a href="">Flexbox Froggy</a></li>
-          <li><a href="">Flexbox Defense</a></li>
-          <li><a href="">Code Combat</a></li>
-          <li><a href="">Ruby Warrior</a></li>
-          <li><a href="">Untrusted</a></li>
-          <li><a href="">Code Hunt</a></li>
-          <li><a href="">RoboCode</a></li>
-          <li><a href="">CheckIO and Empire of Code</a></li>
-          <li><a href="">VIM Adventures</a></li>
-          <li><a href="">Cyber Dojo</a></li>
-          <li><a href="">Elevator Saga</a></li>
-          <li><a href="">Code Wars</a></li>
         </ul>
-  
-        <img src="img/bandeau_dev.jpg" class="bandeau" alt="" />
-      </header>
+        
+        <div id="MiniJeux">
+            <ul>    
+                <li><a href="pgMiniJeux.html">Duke Nukem</a></li>
+                <li><a href="https://www.codemonkey.com/">Code Monkey</a></li>
+                <li><a href="https://www.codingame.com/start">Coding Game</a></li>
+                <li><a href="https://flukeout.github.io/">CSS Diner</a></li>
+                <li><a href="http://flexboxfroggy.com/#fr">Flexbox Froggy</a></li>
+                <li><a href="http://www.flexboxdefense.com/">Flexbox Defense</a></li>
+                <li><a href="https://codecombat.com/">Code Combat</a></li>
+                <li><a href="https://www.thinkful.com/learn/ruby-on-rails-tutorial/">Ruby Warrior</a></li>
+                <li><a href="https://alexnisnevich.github.io/untrusted/">Untrusted</a></li>
+                <li><a href="https://www.microsoft.com/en-us/p/code-hunt-game/9nblggh6d0gs?activetab=pivot:overviewtab">Code Hunt</a></li>
+                <li><a href="https://robocode.sourceforge.io/">RoboCode</a></li>
+                <li><a href="https://checkio.org/>CheckIO and Empire of Code"></a></li>
+                <li><a href="https://vim-adventures.com/">VIM Adventures</a></li>
+                <li><a href="https://www.cyber-dojo.org/creator/home">Cyber Dojo</a></li>
+                <li><a href="http://play.elevatorsaga.com/">Elevator Saga</a></li>
+                <li><a href="https://www.codewars.com/">Code Wars</a></li>
+            </ul>
+        </div>
+
+        <a href="#MiniJeux" id="MiniJeuxOpen"><span>MINI-JEUX <img src="img/triangle.png" alt="menu déroulant"></span></a>
+        <a href="#" id="MiniJeuxClose"><span>MINI-JEUX <img src="img/triangle.png" alt="menu déroulant"></span></a>
+
+        <a href="recherche.html" id="Open"><div class="recherche"><h6>Recherche</h6></div></a>
+        <a href="#" id="Open"><div class="contact"><h6>Contact</h6></div></a>
+    </nav>
+    
+    <img src="img/bandeau_dev.jpg" class="bandeau" alt="">  
+</header>
     <div id="wrapper">
         <h1>Duke Nukem</h1><br>
         <div id="dukeNukem" ><iframe src="https://archive.org/embed/DukeNukem" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe><p>Apparu pour la première fois dans le jeu Duke Nukem en 1991, ce n'est qu'à partir de Duke Nukem 3D, son troisième opus, que le personnage se construit véritablement et qu'il se fait connaître.
