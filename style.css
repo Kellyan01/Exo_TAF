@@ -162,20 +162,79 @@ nav > ul, .recherche, .contact, #MiniJeuxClose {
     width: 100vw;
 }
 
-.container div:first-child {
-    display: flex;
-    flex-direction: row;
+.container {
+    width: 100vw;
     max-width: 1350px;
-    width: 100%;
     margin: 0 auto;
-    align-self: flex-end;
-    justify-content: left;
+    padding-top: 30px;
 }
 
-.container div:first-child div:first-child {
+.rectangle_blanc {
     background-color: #fff;
     height: 15px;
     width: 5px;
+    margin-top: 7px;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+.titre_recherche {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-bottom: 30px;
+    font-size: 0.75rem;
+}
+
+.titre_recherche div:first-child {
+    display: flex;
+}
+
+.titre_recherche a {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.titre_recherche a span {
+    font-size: 0.75em;
+    margin-top: -20px;
+}
+
+.formulaire {
+    background-color: #fff;
+    border-radius: 10px;
+    padding:30px;
+    height: 150px;
+    width: 100%;
+}
+
+.formulaire label {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.formulaire .champ_recherche {
+    display: flex;
+    margin-top: 30px;
+    height: 50px;
+}
+
+#rechercher {
+    border: #ccc 1px solid;
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+    padding: 5px;
+}
+
+.submit {
+    width:150px;
+    background-color: #c10230;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1em;
+    padding:15px 0 ;
+    border-radius: 0 5px 5px 0;
 }
 
 /*-------------------------------
@@ -217,8 +276,12 @@ nav > ul, .recherche, .contact, #MiniJeuxClose {
 .sommaire {
     background-color: #f3f6f9;
     border-radius: 10px;
-    font-size: 0.75em;
+    font-size: 0.8em;
     padding: 15px 20px 10px 20px;
+}
+
+.sommaire .fleche {
+    font-size: 1.5em;
 }
 
 .sommaire h3 {
