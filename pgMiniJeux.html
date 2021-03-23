@@ -10,51 +10,47 @@
     <title>Mini-jeux</title>
 </head>
 <body>
-    <header id="header">
-        <img
-          src="img/logo_region.png"
-          class="logo"
-          alt="logo de la Région Occitanie"/>
-  
-        <nav>
-          <ul>
+  <header id="header">
+    <img src="img/logo_region.png" class="logo" alt="logo de la Région Occitanie">
+
+    <nav>
+        <ul>
             <li><a href="index.html">Nous les Développeurs</a></li>
             <li><a href="PrésentationHTML.html">HTML</a></li>
-            <li><a href="PrésentationCSS.html">CSS</a></li>
+            <li><a href="PresentationCSS.html">CSS</a></li>
             <li><a href="pgJavascript.html">Javascript</a></li>
-            <li>
-              <a
-                rel="start home"
-                href="pgMiniJeux.html" id="open" class="burger" title="Mini Jeux"
-                >Mini-jeux<img src="img/triangle.png" alt="menu déroulant"
-              /></a>
-            </li>
-          </ul>
-          <div class="recherche"><h6>Rechercher</h6></div>
-          <div class="contact"><h6>Contact-nous</h6></div>
-        </nav>
-  
-        <ul id="MiniJeux">
-          <li><a href="pgMiniJeux.html">Duke Nukem</a></li>
-          <li><a href="">Code Monkey</a></li>
-          <li><a href="">Coding Game</a></li>
-          <li><a href="">CSS Diner</a></li>
-          <li><a href="">Flexbox Froggy</a></li>
-          <li><a href="">Flexbox Defense</a></li>
-          <li><a href="">Code Combat</a></li>
-          <li><a href="">Ruby Warrior</a></li>
-          <li><a href="">Untrusted</a></li>
-          <li><a href="">Code Hunt</a></li>
-          <li><a href="">RoboCode</a></li>
-          <li><a href="">CheckIO and Empire of Code</a></li>
-          <li><a href="">VIM Adventures</a></li>
-          <li><a href="">Cyber Dojo</a></li>
-          <li><a href="">Elevator Saga</a></li>
-          <li><a href="">Code Wars</a></li>
         </ul>
-  
-        <img src="img/bandeau_dev.jpg" class="bandeau" alt="" />
-      </header>
+        
+        <div id="MiniJeux">
+            <ul>    
+                <li><a href="pgMiniJeux.html">Duke Nukem</a></li>
+                <li><a href="https://www.codemonkey.com/">Code Monkey</a></li>
+                <li><a href="https://www.codingame.com/start">Coding Game</a></li>
+                <li><a href="https://flukeout.github.io/">CSS Diner</a></li>
+                <li><a href="http://flexboxfroggy.com/#fr">Flexbox Froggy</a></li>
+                <li><a href="http://www.flexboxdefense.com/">Flexbox Defense</a></li>
+                <li><a href="https://codecombat.com/">Code Combat</a></li>
+                <li><a href="https://www.thinkful.com/learn/ruby-on-rails-tutorial/">Ruby Warrior</a></li>
+                <li><a href="https://alexnisnevich.github.io/untrusted/">Untrusted</a></li>
+                <li><a href="https://www.microsoft.com/en-us/p/code-hunt-game/9nblggh6d0gs?activetab=pivot:overviewtab">Code Hunt</a></li>
+                <li><a href="https://robocode.sourceforge.io/">RoboCode</a></li>
+                <li><a href="https://checkio.org/>CheckIO and Empire of Code"></a></li>
+                <li><a href="https://vim-adventures.com/">VIM Adventures</a></li>
+                <li><a href="https://www.cyber-dojo.org/creator/home">Cyber Dojo</a></li>
+                <li><a href="http://play.elevatorsaga.com/">Elevator Saga</a></li>
+                <li><a href="https://www.codewars.com/">Code Wars</a></li>
+            </ul>
+        </div>
+
+        <a href="#MiniJeux" id="MiniJeuxOpen"><span>MINI-JEUX <img src="img/triangle.png" alt="menu déroulant"></span></a>
+        <a href="#" id="MiniJeuxClose"><span>MINI-JEUX <img src="img/triangle.png" alt="menu déroulant"></span></a>
+
+        <a href="recherche.html" id="Open"><div class="recherche"><h6>Recherche</h6></div></a>
+        <a href="#" id="Open"><div class="contact"><h6>Contact</h6></div></a>
+    </nav>
+    
+    <img src="img/bandeau_dev.jpg" class="bandeau" alt="">  
+</header>
     <div id="wrapper">
         <h1>Duke Nukem</h1><br>
         <div id="dukeNukem" ><iframe src="https://archive.org/embed/DukeNukem" width="560" height="384" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe><p>Apparu pour la première fois dans le jeu Duke Nukem en 1991, ce n'est qu'à partir de Duke Nukem 3D, son troisième opus, que le personnage se construit véritablement et qu'il se fait connaître.
@@ -64,46 +60,55 @@
 
         <a href="https://skillcrush.com/blog/free-coding-games/" id="miniJeux"><button class="button">Plus de Jeux</button></a>
     </div>
-    <footer>
-        <div class="colonne">
+    <footer class="footer">
+      <div class="colonne">
           <div class="col1">
-            <h5>Hôtel de Région de Toulouse</h5>
-            <p>22, boulevard du Maréchal-Juin <br />31406 Toulouse Cedex 9</p>
-            <img
-              src="img/logo_region.png"
-              class="logo"
-              alt="logo de la Région Occitanie"/>
+              <h5>Hôtel de Région de Toulouse</h5>
+              <p>22, boulevard du Maréchal-Juin
+                  <br>31406 Toulouse Cedex 9
+              </p>
+              <img src="img/logo_region.png" class="logo" alt="logo de la Région Occitanie">
           </div>
-  
+
           <div class="col2">
-            <h5>ADRAR</h5>
-            <p>11 avenue de l'Europe <br />31520 Ramonville-Saint-Agne</p>
+              <h5>ADRAR</h5>
+              <p>11 avenue de l'Europe
+                  <br>31520 Ramonville-Saint-Agne
+              </p>
           </div>
-  
+
           <div class="col3">
-            <h5>Nos Dernières offres d'emploi</h5>
-            <div>Annonce 1</div>
-            <div>Annonce 2</div>
-  
-            <a href="https://www.adrar-formation.com/">En Savoir Plus -></a>
+              <h5>Nos Dernières offres d'emploi</h5>
+              <div>
+                  <a href=""><h4>Annonce 1</h4></a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div>
+                  <a href=""><h4>Annonce 2</h4></a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+
+              <a href="https://www.adrar-formation.com/"><em>En Savoir Plus</em> <span>></span></a>
           </div>
-  
-          <div class="col3">
-            <h5>Contact</h5>
-            <p>
-              Composez le 3010 pour contacter la Région Occitanie /
-              Pyrénées-Méditerranée (service et appel gratuits)
-            </p>
-            <a href="https://www.laregion.fr/Contactez-la-Region"
-              ><div>Nous Contacter</div></a
-            >
-            <a href=""><div>Les Maisons des Régions</div></a>
+
+          <div class="col4">
+              <h5>Contact</h5>
+              <p>Composez le <em>3010</em> pour contacter la Région Occitanie / Pyrénées-Méditerranée (service et appel gratuits)</p>
+              <a href="https://www.laregion.fr/Contactez-la-Region"><div><span>></span> <em>Nous Contacter</em></div></a>
+              <a href="https://www.laregion.fr/-Les-Maisons-de-la-Region-"><div><span>></span> <em>Les Maisons des Régions</em></div></a>
           </div>
-        </div>  
-        <div class="mention">
-          <a href="#header"><img src="img/triangle.png" alt="haut de page" />
-          <p>Haut de Page</p></a>
-        </div>
-      </footer>  
+      </div>
+
+      <div class="mention">
+          <!--<ul>
+              <li><a href="">Accueil</a></li>
+              <li><a href="">Mentions légales</a></li>
+              <li><a href="">Données personnelles et Cookies</a></li>
+              <li><a href="">Espace presse</a></li>
+              <li><a href="">Plan du site</a></li>
+          </ul>-->
+          <a href="#header"><img src="img/triangle.png" alt="haut de page"><p>Haut de Page</p></a>
+      </div>
+  </footer>
 </body>
 </html>
