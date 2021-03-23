@@ -2,7 +2,7 @@
 /* Styles generaux */
 
 h1 {
-    padding-top:5%;
+    padding-top:3%;
     padding-left: 2%;
 }
 
@@ -36,11 +36,13 @@ p {
 
 .vscode {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
+
 .ExempleVSC:hover {
-    transform: scale(2.5);
+    transform: scale(2.2);
     transition-duration: 1s
 }
 
@@ -279,17 +281,18 @@ a:visited {
 
   .Sommaire2 ul {
     text-align: left;
-    margin-top: 5%;
+    margin-top: 10%;
     list-style: none;
     background-color: #F3F6F9;
     padding-bottom: 10px;
-    padding-top: 10px;
     padding-left: 50px;
+
 }
 
 .Sommaire2 {
     position: sticky;
     top: 0px;
+    margin-top: 50px;
 }
 
 .BaliseMeta:hover {

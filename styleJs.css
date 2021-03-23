@@ -1,5 +1,7 @@
 #banniere{
     background-image: url(img/codingWp.jpg);
+    border: 1px solid black;
+    /*width: 100%;*/
     height: 300px;
     margin: 5% auto;
     background-size: cover;
