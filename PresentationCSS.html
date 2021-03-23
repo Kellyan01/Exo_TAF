@@ -60,15 +60,27 @@
 
     <div class="wrapper">
   
+    <div class="Titre">
+        <img src="Images/css3-logo.png" alt="LogoCSS" class="Logo" />
+        <H1> Qu'est-ce que le langage CSS? </H1>
+    </div>
 
-        <img src="Images/LogoCSS3.jpg" alt="LogoCSS" class="Logo" />
+    
+            <div class="Sommaire">
+             <u>Sommaire de la page:</u>
+             <ul>
+            <li><a href="#Présentation"><span style="color: #FFcd00;"><strong>→</strong></span>  Présentation</a></li>
+            <li><a href="#Enjeux et principes"><span style="color: #FFcd00;"><strong>→</strong></span>  Enjeux</a></li>
+            <li><a href="#Structure"><span style="color: #FFcd00;"><strong>→</strong></span>  Structure</a></li>
+            </ul>
+        </div>
+
   
 
-        <H1> Qu'est-ce que le langage CSS? </H1>
 
 
-        <H2>Présentation:</H2>
-        <p>Les feuilles de style en cascade1, généralement appelées CSS de l'anglais Cascading Style Sheets, 
+        <h2 id="Présentation">Présentation</h2>
+        <p>Les feuilles de style en cascade 1, généralement appelées CSS de l'anglais Cascading Style Sheets, 
             langage informatique qui décrit la présentation des documents HTML et XML.<br>
             standards définissant CSS sont publiés par le World Wide Web Consortium (W3C). Introduit au milieu des
             années 1990, CSS devient couramment utilisé dans la conception de sites web et bien pris en charge par les
@@ -78,26 +90,26 @@
             <a href=https://developer.mozilla.org/fr/docs/Learn/CSS/First_steps/What_is_CSS target="blank">CSS3</a>
 
         </p>
-        <H2>Enjeux et principe</H2>
-        <ol>
+        <H2 id="Enjeux et principes"> Enjeux et principes</H2>
+        <ul>
             <li>
                <p><u>Enjeux:</u></p> 
                 
-                <p>Séparation entre la structure et la présentation
+                <p>Séparation entre la structure et la présentation.
                     L'un des objectifs majeurs des CSS est de permettre la mise en forme hors des documents. Il est par
                     exemple possible de ne décrire que la structure d'un document en HTML, et de décrire toute la
                     présentation dans une feuille de style CSS séparée.</p>
             </Li>
             <Li>
-                <p>Pésentation selon le média:</p>
-                <p>CSS permet de définir le rendu d'un document en fonction du média de restitution et de ses capacités
+                <p><u>Pésentation selon le média:</u></p>
+                <p>Le CSS permet de définir le rendu d'un document en fonction du média de restitution et de ses capacités
                     (type de moniteur ou de dispositif vocal), de celles du navigateur (texte ou graphique), ainsi que
                     des préférences de son utilisateur.</p>
             </Li>
             
-        </ol>
+        </ul>
       
-        <ol>
+        <ul>
             <li>
                 <p><u>Principe:</u></p>
                 <p>Concepts fondamentaux : boîtes et flux CSS<br>
@@ -120,18 +132,18 @@
                     modèle RGB ou des mots clés black, blue, fuchsia, etc.</p>
 
             </li>
-        </ol>
-        <h2>Structure:</h2>
-        <p><span>sélecteur { Propriété : Valeur ; }</span>
+        </ul>
+        <h2 id="Structure">Structure</h2>
+        <p><span>Sélecteur { Propriété : Valeur ; }</span>
 
             Pour les sélecteurs, y'en a 3 très importants à retenir :
 
-            balise --> correspond à la balise sur lequel tu veux appliquer ton style
+            Balise --> correspond à la balise sur lequel tu veux appliquer ton style
             .classe --> correspond à la CLASS (que tu as mis dans certaines balises) sur laquelle tu veux appliquer ton
-            style
+            Style
             #id --> correspond à l'ID (que tu as mis dans certaines balises) sur lequel tu veux appliquer ton style
             */</p>
-        <p><span>body</span><br>
+        <p><span>Body</span><br>
             { /* Ici je cible la balise HTML body. Elle me permet d'appliquer un style à l'ensemble de la page */
             background-image: url(http://lachainenumerique.com/wp-content/uploads/2018/04/cloud.png);
 
@@ -150,7 +162,7 @@
         </p>
         <p>
             <span> On écrit le codage avec des { }:<br></span>
-            Exemple:<br>
+            <u>Exemple:</u><br>
   <img src="Images/Capture.PNG" alt="capture" class="capture"/>
 
 
