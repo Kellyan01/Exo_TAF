@@ -6,60 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styleJs.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <title>Présentation du Javascript</title>
   </head>
-  <body>
-    <header id="header">
-      <img
-        src="img/logo_region.png"
-        class="logo"
-        alt="logo de la Région Occitanie"/>
+  <body><header id="header">
+    <img src="img/logo_region.png" class="logo" alt="logo de la Région Occitanie">
 
-      <nav>
+    <nav>
         <ul>
-          <li><a href="index.html">Nous les Développeurs</a></li>
-          <li><a href="PrésentationHTML.html">HTML</a></li>
-          <li><a href="PrésentationCSS.html">CSS</a></li>
-          <li><a href="pgJavascript.html">Javascript</a></li>
-          <li>
-            <a
-              rel="start home"
-              href="pgMiniJeux.html" id="open" class="burger" title="Mini Jeux"
-              >Mini-jeux<img src="img/triangle.png" alt="menu déroulant"
-            /></a>
-          </li>
+            <li><a href="index.html">Nous les Développeurs</a></li>
+            <li><a href="PrésentationHTML.html">HTML</a></li>
+            <li><a href="PrésentationCSS.html">CSS</a></li>
+            <li><a href="pgJavascript.html">Javascript</a></li>
         </ul>
-        <div class="recherche"><h6>Rechercher</h6></div>
-        <div class="contact"><h6>Contact-nous</h6></div>
-      </nav>
+        
+        <div id="MiniJeux">
+            <ul>    
+                <li><a href="pgMiniJeux.html">Duke Nukem</a></li>
+                <li><a href="https://www.codemonkey.com/">Code Monkey</a></li>
+                <li><a href="https://www.codingame.com/start">Coding Game</a></li>
+                <li><a href="https://flukeout.github.io/">CSS Diner</a></li>
+                <li><a href="http://flexboxfroggy.com/#fr">Flexbox Froggy</a></li>
+                <li><a href="http://www.flexboxdefense.com/">Flexbox Defense</a></li>
+                <li><a href="https://codecombat.com/">Code Combat</a></li>
+                <li><a href="https://www.thinkful.com/learn/ruby-on-rails-tutorial/">Ruby Warrior</a></li>
+                <li><a href="https://alexnisnevich.github.io/untrusted/">Untrusted</a></li>
+                <li><a href="https://www.microsoft.com/en-us/p/code-hunt-game/9nblggh6d0gs?activetab=pivot:overviewtab">Code Hunt</a></li>
+                <li><a href="https://robocode.sourceforge.io/">RoboCode</a></li>
+                <li><a href="https://checkio.org/>CheckIO and Empire of Code"></a></li>
+                <li><a href="https://vim-adventures.com/">VIM Adventures</a></li>
+                <li><a href="https://www.cyber-dojo.org/creator/home">Cyber Dojo</a></li>
+                <li><a href="http://play.elevatorsaga.com/">Elevator Saga</a></li>
+                <li><a href="https://www.codewars.com/">Code Wars</a></li>
+            </ul>
+        </div>
 
-      <ul id="MiniJeux">
-        <li><a href="pgMiniJeux.html">Duke Nukem</a></li>
-        <li><a href="">Code Monkey</a></li>
-        <li><a href="">Coding Game</a></li>
-        <li><a href="">CSS Diner</a></li>
-        <li><a href="">Flexbox Froggy</a></li>
-        <li><a href="">Flexbox Defense</a></li>
-        <li><a href="">Code Combat</a></li>
-        <li><a href="">Ruby Warrior</a></li>
-        <li><a href="">Untrusted</a></li>
-        <li><a href="">Code Hunt</a></li>
-        <li><a href="">RoboCode</a></li>
-        <li><a href="">CheckIO and Empire of Code</a></li>
-        <li><a href="">VIM Adventures</a></li>
-        <li><a href="">Cyber Dojo</a></li>
-        <li><a href="">Elevator Saga</a></li>
-        <li><a href="">Code Wars</a></li>
-      </ul>
+        <a href="#MiniJeux" id="MiniJeuxOpen"><span>MINI-JEUX <img src="img/triangle.png" alt="menu déroulant"></span></a>
+        <a href="#" id="MiniJeuxClose"><span>MINI-JEUX <img src="img/triangle.png" alt="menu déroulant"></span></a>
 
-      <img src="img/bandeau_dev.jpg" class="bandeau" alt="" />
-    </header>
-    <div id="wrapper">
-      <h1>Le Javascript, qu'est que c'est?</h1>
-      <div id="logoJs"><img src="img/logoJs.png" alt="logoJs" /><figcaption>Logo Javascript</figcaption></div>
-      <p>
-        JavaScript est un langage de programmation de scripts principalement
-        employé dans les pages web interactives et à ce titre est une partie
+        <a href="#" id="Open"><div class="recherche"><h6>Recherche</h6></div></a>
+        <a href="#" id="Open"><div class="contact"><h6>Contact</h6></div></a>
+    </nav>
+    
+    <img src="img/bandeau_dev.jpg" class="bandeau" alt="">  
+  </header>
+  <div id="banniere"><img src="img/codingWp.jpg" alt=""></div>
+  <div id="logoJs"><img src="img/logoJs.png" alt="logoJs" /><figcaption>Logo Javascript</figcaption></div>
+  <div id="wrapper">
+<h1>Le Javascript, qu'est que c'est?</h1>
+
+<div id="sommairePgeJs"><ul><p>Sommaire de la page:</p>
+    <li><a href="#ancre_introJs"><span style="color:#FFCD00"><strong>→</strong></span>Le Javascript, qu'est-ce que c'est?</a></li>
+    <li><a href="#ancre_utilisationWeb"><span style="color:#FFCD00"><strong>→</strong></span>Son utilisation dans le Web?</a></li>
+    <li><a href="#ancre_autresUtilisations"><span style="color:#FFCD00"><strong>→</strong></span>Pour quelles autres utilisations?</a></li>
+</ul></div>
+
+<p id="ancre_introJs">
+  JavaScript est un langage de programmation de scripts principalement
+  employé dans les pages web interactives et à ce titre est une partie
         essentielle des applications web. Avec les technologies HTML et CSS,
         JavaScript est parfois considéré comme l'une des technologies cœur du
         World Wide Web2. Une grande majorité des sites web l'utilisent3, et la
@@ -75,7 +79,9 @@
         windows) possède son propre modèle qui lui permettra d'instancier des
         objets fils à l'aide de constructeurs utilisant ses propriétés. Par
         exemple, la propriété de prototypage va leur permettre de créer des
-        objets héritiers personnalisés.
+        objets héritiers personnalisés.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius risus gravida lectus aliquet egestas. Vivamus sit amet consectetur leo, nec molestie metus. Nunc vitae felis lacinia, tincidunt felis eget, venenatis ligula. Maecenas ut porttitor mi, a vulputate ante. Duis consectetur convallis velit euismod consectetur. Fusce vestibulum finibus nunc, a consequat purus tincidunt nec. Fusce id varius lorem. Cras pulvinar nibh a nibh convallis, vel accumsan nisl gravida. Aliquam faucibus nunc quis felis accumsan, vitae vehicula mi vehicula. In sed libero in est ultrices tincidunt. Ut consequat sollicitudin dictum.
+
+        Curabitur aliquam ipsum ut pharetra malesuada. In commodo ipsum ut odio ultrices, a volutpat tellus tincidunt. Nullam efficitur sollicitudin consectetur. Nunc quis erat a lorem placerat semper. Donec accumsan risus eu diam tincidunt convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed tincidunt dignissim tellus sed finibus. Suspendisse sed enim euismod, ultricies metus sed, molestie turpis. In et metus vitae leo ornare efficitur. Suspendisse odio massa, porttitor sit amet facilisis sagittis, aliquam non tellus. Maecenas mattis ante purus, quis molestie odio euismod quis. Ut quis ligula vel nulla laoreet bibendum non euismod ante. Nulla massa risus, finibus nec tincidunt sit amet, egestas lacinia ipsum. Mauris sodales lectus tempus rutrum ornare. Ut fermentum nulla sed massa aliquam vehicula.
       </p><br>
       <p>
         En outre, les fonctions sont des objets de première classe. Le langage
@@ -85,10 +91,12 @@
         a été créé en 1995 par Brendan Eich. Il a été standardisé sous le nom
         d'ECMAScript en juin 1997 par Ecma International dans le standard
         ECMA-262. La version actuellement en vigueur de ce standard, depuis juin
-        2020, est la 11ème édition.
+        2020, est la 11ème édition.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius risus gravida lectus aliquet egestas. Vivamus sit amet consectetur leo, nec molestie metus. Nunc vitae felis lacinia, tincidunt felis eget, venenatis ligula. Maecenas ut porttitor mi, a vulputate ante. Duis consectetur convallis velit euismod consectetur. Fusce vestibulum finibus nunc, a consequat purus tincidunt nec. Fusce id varius lorem. Cras pulvinar nibh a nibh convallis, vel accumsan nisl gravida. Aliquam faucibus nunc quis felis accumsan, vitae vehicula mi vehicula. In sed libero in est ultrices tincidunt. Ut consequat sollicitudin dictum.
+
+        Curabitur aliquam ipsum ut pharetra malesuada. In commodo ipsum ut odio ultrices, a volutpat tellus tincidunt. Nullam efficitur sollicitudin consectetur. Nunc quis erat a lorem placerat semper. Donec accumsan risus eu diam tincidunt convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed tincidunt dignissim tellus sed finibus. Suspendisse sed enim euismod, ultricies metus sed, molestie turpis. In et metus vitae leo ornare efficitur. Suspendisse odio massa, porttitor sit amet facilisis sagittis, aliquam non tellus. Maecenas mattis ante purus, quis molestie odio euismod quis. Ut quis ligula vel nulla laoreet bibendum non euismod ante. Nulla massa risus, finibus nec tincidunt sit amet, egestas lacinia ipsum. Mauris sodales lectus tempus rutrum ornare. Ut fermentum nulla sed massa aliquam vehicula.
       </p><br>
 
-      <h1>Son utilisation dans le Web?</h1>
+      <h1 id="ancre_utilisationWeb">Son utilisation dans le Web?</h1>
       <p>
         Du code JavaScript peut être intégré directement au sein des pages web,
         pour y être exécuté sur le poste client. C'est alors le navigateur web
@@ -103,9 +111,11 @@
         applications dynamiques, des transitions, des animations ou manipuler
         des données réactives, à des fins ergonomiques ou cosmétiques.
         JavaScript n'est pas limité à la manipulation de documents HTML et peut
-        aussi servir à manipuler des documents SVG, XUL et autres dialectes XML.
+        aussi servir à manipuler des documents SVG, XUL et autres dialectes XML.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius risus gravida lectus aliquet egestas. Vivamus sit amet consectetur leo, nec molestie metus. Nunc vitae felis lacinia, tincidunt felis eget, venenatis ligula. Maecenas ut porttitor mi, a vulputate ante. Duis consectetur convallis velit euismod consectetur. Fusce vestibulum finibus nunc, a consequat purus tincidunt nec. Fusce id varius lorem. Cras pulvinar nibh a nibh convallis, vel accumsan nisl gravida. Aliquam faucibus nunc quis felis accumsan, vitae vehicula mi vehicula. In sed libero in est ultrices tincidunt. Ut consequat sollicitudin dictum.
+
+        Curabitur aliquam ipsum ut pharetra malesuada. In commodo ipsum ut odio ultrices, a volutpat tellus tincidunt. Nullam efficitur sollicitudin consectetur. Nunc quis erat a lorem placerat semper. Donec accumsan risus eu diam tincidunt convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed tincidunt dignissim tellus sed finibus. Suspendisse sed enim euismod, ultricies metus sed, molestie turpis. In et metus vitae leo ornare efficitur. Suspendisse odio massa, porttitor sit amet facilisis sagittis, aliquam non tellus. Maecenas mattis ante purus, quis molestie odio euismod quis. Ut quis ligula vel nulla laoreet bibendum non euismod ante. Nulla massa risus, finibus nec tincidunt sit amet, egestas lacinia ipsum. Mauris sodales lectus tempus rutrum ornare. Ut fermentum nulla sed massa aliquam vehicula.
       </p><br>
-      <h2>Quelles autres utilisations?</h2>
+      <h2 id="ancre_autresUtilisations">Quelles autres utilisations?</h2>
       <h3>Sur un serveur:</h3>
       <p>
         JavaScript peut également être utilisé comme langage de programmation
@@ -142,7 +152,9 @@
         comme des navigateurs Web, pour des tâches relatives à l'interface
         utilisateur et à la communication interne (ex. : les extensions de
         Firefox et Thunderbird sont installées à base de fichiers XPI utilisant
-        le JavaScript. Voir aussi Prefs.js).
+        le JavaScript. Voir aussi Prefs.js).Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius risus gravida lectus aliquet egestas. Vivamus sit amet consectetur leo, nec molestie metus. Nunc vitae felis lacinia, tincidunt felis eget, venenatis ligula. Maecenas ut porttitor mi, a vulputate ante. Duis consectetur convallis velit euismod consectetur. Fusce vestibulum finibus nunc, a consequat purus tincidunt nec. Fusce id varius lorem. Cras pulvinar nibh a nibh convallis, vel accumsan nisl gravida. Aliquam faucibus nunc quis felis accumsan, vitae vehicula mi vehicula. In sed libero in est ultrices tincidunt. Ut consequat sollicitudin dictum.
+
+        Curabitur aliquam ipsum ut pharetra malesuada. In commodo ipsum ut odio ultrices, a volutpat tellus tincidunt. Nullam efficitur sollicitudin consectetur. Nunc quis erat a lorem placerat semper. Donec accumsan risus eu diam tincidunt convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed tincidunt dignissim tellus sed finibus. Suspendisse sed enim euismod, ultricies metus sed, molestie turpis. In et metus vitae leo ornare efficitur. Suspendisse odio massa, porttitor sit amet facilisis sagittis, aliquam non tellus. Maecenas mattis ante purus, quis molestie odio euismod quis. Ut quis ligula vel nulla laoreet bibendum non euismod ante. Nulla massa risus, finibus nec tincidunt sit amet, egestas lacinia ipsum. Mauris sodales lectus tempus rutrum ornare. Ut fermentum nulla sed massa aliquam vehicula.
       </p>
       <p>
         Depuis 2004, l'objet js de l'environnement de programmation graphique
@@ -154,50 +166,61 @@
         création de contenus interactifs en ligne. JavaScript est aussi utilisé
         dans un contenu BIFS pour l'exploitation des événements. Pour cela la
         spécification BIFS fournit un nœud Script pour incorporer de
-        l'ECMAScript.
+        l'ECMAScript. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius risus gravida lectus aliquet egestas. Vivamus sit amet consectetur leo, nec molestie metus. Nunc vitae felis lacinia, tincidunt felis eget, venenatis ligula. Maecenas ut porttitor mi, a vulputate ante. Duis consectetur convallis velit euismod consectetur. Fusce vestibulum finibus nunc, a consequat purus tincidunt nec. Fusce id varius lorem. Cras pulvinar nibh a nibh convallis, vel accumsan nisl gravida. Aliquam faucibus nunc quis felis accumsan, vitae vehicula mi vehicula. In sed libero in est ultrices tincidunt. Ut consequat sollicitudin dictum.
+
+        Curabitur aliquam ipsum ut pharetra malesuada. In commodo ipsum ut odio ultrices, a volutpat tellus tincidunt. Nullam efficitur sollicitudin consectetur. Nunc quis erat a lorem placerat semper. Donec accumsan risus eu diam tincidunt convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed tincidunt dignissim tellus sed finibus. Suspendisse sed enim euismod, ultricies metus sed, molestie turpis. In et metus vitae leo ornare efficitur. Suspendisse odio massa, porttitor sit amet facilisis sagittis, aliquam non tellus. Maecenas mattis ante purus, quis molestie odio euismod quis. Ut quis ligula vel nulla laoreet bibendum non euismod ante. Nulla massa risus, finibus nec tincidunt sit amet, egestas lacinia ipsum. Mauris sodales lectus tempus rutrum ornare. Ut fermentum nulla sed massa aliquam vehicula.
       </p>
     </div>
     <footer>
       <div class="colonne">
-        <div class="col1">
-          <h5>Hôtel de Région de Toulouse</h5>
-          <p>22, boulevard du Maréchal-Juin <br />31406 Toulouse Cedex 9</p>
-          <img
-            src="img/logo_region.png"
-            class="logo"
-            alt="logo de la Région Occitanie"/>
-        </div>
+          <div class="col1">
+              <h5>Hôtel de Région de Toulouse</h5>
+              <p>22, boulevard du Maréchal-Juin
+                  <br>31406 Toulouse Cedex 9
+              </p>
+              <img src="img/logo_region.png" class="logo" alt="logo de la Région Occitanie">
+          </div>
 
-        <div class="col2">
-          <h5>ADRAR</h5>
-          <p>11 avenue de l'Europe <br />31520 Ramonville-Saint-Agne</p>
-        </div>
+          <div class="col2">
+              <h5>ADRAR</h5>
+              <p>11 avenue de l'Europe
+                  <br>31520 Ramonville-Saint-Agne
+              </p>
+          </div>
 
-        <div class="col3">
-          <h5>Nos Dernières offres d'emploi</h5>
-          <div>Annonce 1</div>
-          <div>Annonce 2</div>
+          <div class="col3">
+              <h5>Nos Dernières offres d'emploi</h5>
+              <div>
+                  <a href=""><h4>Annonce 1</h4></a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div>
+                  <a href=""><h4>Annonce 2</h4></a>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
 
-          <a href="https://www.adrar-formation.com/">En Savoir Plus -></a>
-        </div>
+              <a href="https://www.adrar-formation.com/"><em>En Savoir Plus</em> <span>></span></a>
+          </div>
 
-        <div class="col3">
-          <h5>Contact</h5>
-          <p>
-            Composez le 3010 pour contacter la Région Occitanie /
-            Pyrénées-Méditerranée (service et appel gratuits)
-          </p>
-          <a href="https://www.laregion.fr/Contactez-la-Region"
-            ><div>Nous Contacter</div></a
-          >
-          <a href=""><div>Les Maisons des Régions</div></a>
-        </div>
+          <div class="col4">
+              <h5>Contact</h5>
+              <p>Composez le <em>3010</em> pour contacter la Région Occitanie / Pyrénées-Méditerranée (service et appel gratuits)</p>
+              <a href="https://www.laregion.fr/Contactez-la-Region"><div><span>></span> <em>Nous Contacter</em></div></a>
+              <a href="https://www.laregion.fr/-Les-Maisons-de-la-Region-"><div><span>></span> <em>Les Maisons des Régions</em></div></a>
+          </div>
       </div>
 
       <div class="mention">
-        <a href="#header"><img src="img/triangle.png" alt="haut de page" />
-        <p>Haut de Page</p></a>
+          <!--<ul>
+              <li><a href="">Accueil</a></li>
+              <li><a href="">Mentions légales</a></li>
+              <li><a href="">Données personnelles et Cookies</a></li>
+              <li><a href="">Espace presse</a></li>
+              <li><a href="">Plan du site</a></li>
+          </ul>-->
+          <a href="#header"><img src="img/triangle.png" alt="haut de page"><p>Haut de Page</p></a>
       </div>
-    </footer>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   </body>
 </html>
