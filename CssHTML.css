@@ -237,3 +237,57 @@ p {
     transition-duration: 1s;
 }
 
+.Commentaire:hover {
+    transform: scale(1.3);
+    transition-duration: 1s;
+}
+
+.Sommaire {
+    position: sticky;
+    top: 0px;
+}
+
+.Sommaire ul {
+    text-align: left;
+    margin-top: 5%;
+    list-style: none;
+    background-color: #F3F6F9;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.Sommaire p {
+    text-decoration: underline yellow 8px;
+}
+
+.Sommaire li {
+    margin-left: 5%;
+}
+
+a{
+    color: black;
+}
+
+a:visited {
+    color: black;
+  }
+
+  a:hover{
+    color: #A8022A;
+    text-decoration: underline;
+}
+
+  .Sommaire2 ul {
+    text-align: left;
+    margin-top: 5%;
+    list-style: none;
+    background-color: #F3F6F9;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+.Sommaire2 {
+    position: sticky;
+    top: 0px;
+}
