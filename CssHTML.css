@@ -291,3 +291,8 @@ a:visited {
     position: sticky;
     top: 0px;
 }
+
+.BaliseMeta:hover {
+    transform: scale(1.5);
+    transition: 1s;
+}
