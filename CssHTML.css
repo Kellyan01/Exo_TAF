@@ -257,7 +257,7 @@ p {
 }
 
 .Sommaire p {
-    text-decoration: underline yellow 8px;
+    text-decoration: underline #FFCD00 8px;
 }
 
 .Sommaire li {
